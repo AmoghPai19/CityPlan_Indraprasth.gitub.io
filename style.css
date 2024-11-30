@@ -288,6 +288,25 @@ th {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 768px) {
+            body {
+                font-size: 16px;
+                margin: 15px;
+            }
+
+            .item {
+                flex: 1 1 100%; /* Stack items on tablet */
+            }
+        }
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+            body {
+                font-size: 14px;
+                margin: 10px;
+            }
+}
+
 /* Keyframe Animations */
 @keyframes fadeIn {
     from {
