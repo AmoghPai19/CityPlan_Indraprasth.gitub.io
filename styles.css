@@ -1,321 +1,110 @@
-/* General Styles */
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
 body {
-    margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #f7f6f3; /* Soft background color for a professional look */
-    color: #333;
-}
-
-/* Navbar Container */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #d3bc8d; /* Professional beige tone */
-    padding: 15px 30px; /* Enhanced padding for spacing */
-    color: #000;
-    border-bottom: 3px solid #b08b53; /* Darker tone for contrast */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-/* Logo */
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Grande', Verdana, sans-serif;
-    color: #333; /* Darker color for better readability */
-}
-
-/* Navigation Links */
-.nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: space-between; /* Space links evenly */
-    align-items: center;
-    gap: 20px; /* Add spacing between links */
+    background-color: #f5f5f5;
     margin: 0;
+    padding: 20px; /* Adding padding to the body to prevent sticking at the top */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns content towards the top */
+    min-height: 100vh;
+}
+
+/* Main Container */
+section {
+    background-color: white;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 30px; /* Adding margin to ensure there's space from the top */
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header p {
+    margin: 1rem 0 0;
+}
+
+/* Section Titles */
+h2 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+/* List Items */
+ul {
+    list-style: none;
     padding: 0;
 }
 
-.nav-links li {
-    margin: 0; /* No extra spacing */
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px; /* Standardized size */
-    padding: 8px 12px;
-    transition: all 0.3s ease;
-    border-radius: 4px;
-}
-
-/* Hover Effects */
-.nav-links a:hover {
-    background-color: #b08b53; /* Highlight effect */
-    color: #fff; /* Invert text color */
-    font-weight: 600;
-}
-
-/* Headings */
-.headings {
-    font-family: 'Poppins', sans-serif;
-    font-size: 36px;
-    color: #333;
-    text-align: center;
-    margin-top: 40px;
-}
-
-/* Intro Paragraph */
-.intro {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    line-height: 1.8; /* Improve readability */
-    color: #383737; /* Slightly muted tone */
-    max-width: 800px; /* Limit width for better readability */
-    margin: 20px auto; /* Center content */
-    text-align: justify;
-    padding: 0 20px;
-}
-
-/* Content Section */
-.content {
-    padding: 40px 20px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        width: 100%;
-        justify-content: space-evenly;
-    }
-
-    .headings {
-        font-size: 28px;
-    }
-
-    .intro {
-        font-size: 18px;
-    }
-}
-
-/* About Section */
-.about-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f7f6f3;
-}
-
-.section-title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.section-intro {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    line-height: 1.8;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: justify;
-}
-
-/* Team Section */
-.team-section {
-    padding: 40px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-.team-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.team-member {
-    background-color: #f7f6f3;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 250px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-    transform: translateY(-10px);
-}
-
-.member-name {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.member-usn {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #777;
-    margin-bottom: 10px;
-}
-
-.member-description {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #555;
-}
-
-.linkedin-link {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #0077b5; /* LinkedIn blue */
-    font-weight: bold;
-    font-size: 14px;
-    transition: color 0.3s ease;
-}
-
-.linkedin-link:hover {
-    color: #005582; /* Darker blue on hover */
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .team-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .team-member {
-        width: 90%;
-    }
-}
-
-/* Project Section */
-.project-section {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.section-title {
-    font-size: 36px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.project-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
-}
-
-.project-description {
-    margin-bottom: 20px;
-}
-
-.project-features {
-    list-style: disc;
-    padding-left: 20px;
-    margin: 20px 0;
-}
-
-.project-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project-link {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+ul li {
+    background-color: #e7f7e7;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-.project-link:hover {
-    background-color: #555;
-}
-.github{
-    display: inline-block;
-    margin-top: 10px;
+/* Links */
+a {
+    color: #4CAF50;
     text-decoration: none;
-    color: #726f6f; /* LinkedIn blue */
     font-weight: bold;
-    font-size: 20px;
-    transition: color 0.3s ease;
 }
-.github:hover{
-    color: #232526; /* Darker blue on hover */
+
+a:hover {
     text-decoration: underline;
-
 }
 
-.team-container-1 {
-    display: flex; /* Align team members in a row */
-    justify-content: space-evenly; /* Evenly space out the team member containers */
-    flex-wrap: wrap; /* Allow the items to wrap if there's not enough space */
-    gap: 20px; /* Adds space between team member containers */
-    margin-top: 30px;
+/* Definition List */
+dl dt {
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
 }
 
-.team-member-1 {
-    flex: 1 1 250px; /* Allow the container to grow/shrink and have a minimum width of 250px */
-    padding: 20px;
-    background-color: #f7f6f3;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
+dl dd {
+    margin-left: 1.5rem;
+    color: #666;
 }
 
-.team-member h3 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 10px;
+/* Blockquote */
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #4CAF50;
+    padding-left: 1rem;
+    margin-top: 2rem;
 }
 
-.member-ideas h3 {
-    font-size: 18px;
-    font-weight: 500;
-}
+/* Responsive Design */
+@media (max-width: 600px) {
+    section {
+        padding: 1.5rem;
+    }
 
-
-.member-ideas li {
-    font-size: 16px;
-    margin: 5px 0;
-}
-
-.team-member-1:hover {
-    transform: translateY(-10px);
+    header {
+        padding: 1.5rem;
+    }
 }
