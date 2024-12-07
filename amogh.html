@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">City Design</div>
+        <ul class="nav-links">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="amogh.html">Amogh</a></li>
+            <li><a href="#contact">Bhoomika</a></li>
+            <li><a href="#contact">Saanvi</a></li>
+            <li><a href="#contact">Ramya</a></li>
+        </ul>
+    </nav>
+
+    <!-- Business Ideas Section -->
+    <section class="business-ideas">
+        <h2 class="head">Identified Business Ideas</h2>
+        <div class="ideas-box">
+            <div class="idea">
+                <h3>Affordable Clean Energy Solutions</h3>
+                <p>
+                    Affordable clean energy solutions align with SDG 11.6, which aims to reduce the adverse environmental impact of cities, particularly by focusing on air quality and waste management.
+                    <br> Affordable clean energy contributes to this by:
+                    <ul>
+                        <li>Reducing air pollution through cleaner energy sources.</li>
+                        <li>Minimizing greenhouse gas emissions.</li>
+                        <li>Promoting the use of renewable energy in urban areas.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="idea">
+                <h3>Microfinance or Lending Services</h3>
+                <p>
+                    Microfinance or lending services align with SDG 11.1, which focuses on ensuring access to adequate, safe, and affordable housing and basic services for all by 2030.
+                    <br> Microfinance and lending services support this goal by:
+                    <ul>
+                        <li>Enabling low-income populations to access financial resources for housing improvements or purchases.</li>
+                        <li>Helping communities work together on projects to fix or build things like roads, houses, clean water systems, and toilets.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="idea">
+                <h3>E-commerce & Online Marketplaces</h3>
+                <p>
+                    E-commerce and online marketplaces primarily align with SDG 8 (Decent Work and Economic Growth) and SDG 9 (Industry, Innovation, and Infrastructure) but also contribute indirectly to other SDGs, including SDG 11 (Sustainable Cities and Communities).
+                </p>
+            </div>
+
+            <div class="idea">
+                <h3>Education & Vocational Training Centers</h3>
+                <p>
+                    Education and vocational training centers align with SDG 11.7, which focuses on providing universal access to safe, inclusive, and accessible green and public spaces, particularly for vulnerable populations.
+                    <br>Education & Vocational Training Centers contributes to this by:
+                    <ul>
+                        <li>Empowering Vulnerable Groups: By equipping youth, women, and marginalized groups with vocational skills, these centers enable them to participate more actively in urban economies.</li>
+                        <li>Promoting Sustainable Urban Growth: Training in sustainable practices (e.g., green construction, waste management, or clean energy) contributes to environmentally responsible urban development.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="idea">
+                <h3>Telecommunications Services</h3>
+                <p>
+                    Telecommunications services primarily align with SDG 9 (Industry, Innovation, and Infrastructure) and SDG 11 (Sustainable Cities and Communities) but contribute to several other SDGs as well.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflection Section -->
+    <section class="Reflection">
+        <h2>Course Reflections</h2>
+        <div class="reflection-box">
+            <ol>
+                <li>
+                    What are the kinds of problems we see in nature? (iteration, recursion, backtracking)
+                    <p class="ans">We can observe many different problems in nature that we can relate to iterations and backtracking. One such example would be the change in seasons, which happens in a cycle throughout the year, which we can relate to an iteration. The growth of cabbage leaves, forming layers, can be related to recursion, and the ants exploring their whole territory and returning back to their home can be related to backtracking. There are various other instances in nature that can be related to iterations, recursion, and backtracking.</p>
+                </li>
+                <li>
+                    What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth.
+                    <p class="ans">Space Complexity: Is the extra space taken by an algorithm to execute. Time complexity: Time taken by an algorithm to execute is called time complexity. Space and time complexity are important for evaluating the efficiency of algorithms. They help programmers understand how an algorithm performs and whether it is suitable for specific applications. The orders of growth of an algorithm describe how time or space requirements grow as the input size increases.
+                        <br> O(1) -> constant order of growth <br> O(n) -> linear order of growth <br> O(log n) -> logarithmic order of growth
+                    </p>
+                </li>
+                <li>
+                    Take away from different design principles from chapter 2?
+                    <p class="ans">After studying different algorithms, the key ideas started to make sense. Learning how AVL trees and Red-Black trees maintain balance highlighted the importance of structures in data and efficient operations. Comparing brave and cautious travel to DFS and BFS in graph traversal showed how different strategies can solve problems effectively. Finally, understanding how various sorting algorithms work, such as dividing and merging or swapping elements, helped to understand their logic. In all, these concepts have provided a solid foundation for the principles of algorithms.</p>
+                </li>
+                <li>
+                    The hierarchical data and how different tree data structures solve and optimize over problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)
+                    <p class="ans">Tree data structures help organize hierarchical data efficiently and solve various problems. Binary search trees improve searching by ordering the roots, but they are not balanced. A 2-3 tree is a self-balancing tree designed to keep operations efficient by keeping all leaf nodes at the same level, but this still introduces skewness in the tree. Hence, we moved towards the AVL tree, which was balanced based on a balancing factor and rotations. Further, to reduce the number of rotations, we moved to the Red-Black tree. Heap is a complete binary tree that ensures the heap property. Heaps are good for priority queues. A Trie is a tree data structure primarily used for storing strings. Tries are used for tasks like autocomplete and prefix search.</p>
+                </li>
+                <li>
+                    The need for array query algorithms and their implications. Their applications and principles need to be discussed.
+                    <p class="ans">Array queries are necessary for efficiently handling large amounts of data with frequent updates. Lookup tables are good for precomputing and storing results to allow fast retrieval during range queries. Segment trees are versatile structures and useful for efficient updates. An alternative to these is BIT with simpler code for range queries, operating on the principle of isolating the last bit.</p>
+                </li>
+                <li>
+                    Differentiate between tree and graphs and their traversals. The applications of each.
+                    <p class="ans">Trees and graphs are both structures used to organize data, but they differ in many ways. A tree is a hierarchical structure with one root node and no cycles, whereas a graph is a set of nodes connected together by edges, and it can have cycles.
+                        <br>Tree traversal:<br> 1. Pre-order<br> 2. In-order<br> 3. Post-order<br><br>
+                        Graph traversal:<br> 1. DFS (Depth First Search): Brave Traversal<br> 2. BFS (Breadth First Search): Cautious Traversal<br><br>
+                        Trees are used for representing hierarchical data and for searching the shortest path and sorting. Graphs are used in applications for finding the shortest path.</p>
+                </li>
+                <li>
+                    Deliberate on sorting and searching algorithms, the technique behind each and how they connect to the real world.
+                    <p class="ans">Sorting and searching algorithms are important for organizing and finding data efficiently, with many real-world uses. Sorting algorithms like quick sort and merge sort arrange data in order, which is helpful in tasks like organizing products for e-commerce websites. Searching algorithms like binary search locate specific items, used in search engines and e-commerce websites.</p>
+                </li>
+                <li>
+                    Discuss the importance of graph algorithms with respect to spanning trees and shortest paths.
+                    <p class="ans">Graphs are important with respect to spanning trees to calculate MST (Minimum Spanning Tree), which is used to connect all the nodes in the graph with the least cost, making it useful for laying roads and pipelines. Shortest path algorithms, such as Dijkstra's, help in finding the quickest or shortest way to travel between nodes, which is useful in GPS navigation apps.</p>
+                </li>
+                <li>
+                    Discuss the different studied algorithm design techniques.
+                    <p class="ans">Different algorithms studied:<br>1. Backtracking: It involves exploring all possible solutions and pruning the ones that do not lead to a solution, learned with the example of the N-queens problem.<br><br>2. Sorting Algorithms: <br> i. Divide and conquer: Quick and Merge Sort<br> ii. Comparison-Based: Selection Sort, Insertion Sort, Bubble Sort.<br><br> 3. Brute force: Solving a problem by trying all possible solutions one-by-one.<br><br> 4. String search algorithms: <br> i. Boyer-Moore<br> ii. Knuth-Morris-Pratt<br> iii. Rabin-Karp<br><br> 5. Shortest path algorithms: <br> i. Dijkstra's<br> ii. Floyd's<br> iii. Warshall's<br> iv. Prim's</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+</body>
+</html>
