@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">City Design</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="amogh.html">Amogh</a></li>
+            <li><a href="#contact">Bhoomika</a></li>
+            <li><a href="#contact">Saanvi</a></li>
+            <li><a href="#contact">Ramya</a></li>
+        </ul>
+    </nav>
+
+    <!-- Business Ideas Section -->
+    <section class="business-ideas">
+        <h2 class="head">Identified Business Ideas</h2>
+        <div class="ideas-box">
+            <div class="idea">
+                <h3>High-Tech Business Parks</h3>
+                <p>
+                    High-Tech Business Parks solutions align with SDG 11.3, enhance inclusive and sustainable urbanization and capacity for participatory, integrated and sustainable human settlement planning and management in all countries.
+                    <ul>
+                        <li>High-tech business parks can drive planned and controlled urbanization by clustering economic activities in designated areas, preventing urban sprawl.</li>
+                        <li>Integrating green building designs, energy-efficient infrastructure, and smart technologies aligns with sustainability principles of SDG 11.3.</li>
+                        <li>High-tech parks typically prioritize industries like IT, AI, and biotech, which often have lower environmental footprints compared to traditional industrial setups.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="idea">
+                <h3>Shared Mobility Services</h3>
+                <p>
+                    Microfinance or lending services align with SDG 11.1, which focuses on ensuring access to adequate, safe, and affordable housing and basic services for all by 2030.
+                    <br> Microfinance and lending services support this goal by:
+                    <ul>
+                        <li>Enabling low-income populations to access financial resources for housing improvements or purchases.</li>
+                        <li>Helping communities work together on projects to fix or build things like roads, houses, clean water systems, and toilets.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="idea">
+                <h3>Autonomous Delivery Services</h3>
+                <p>
+                    E-commerce and online marketplaces primarily align with SDG 8 (Decent Work and Economic Growth) and SDG 9 (Industry, Innovation, and Infrastructure) but also contribute indirectly to other SDGs, including SDG 11 (Sustainable Cities and Communities).
+                </p>
+            </div>
+
+            <div class="idea">
+                <h3>Cultural and Entertainment Districts</h3>
+                <p>
+                    Education and vocational training centers align with SDG 11.7, which focuses on providing universal access to safe, inclusive, and accessible green and public spaces, particularly for vulnerable populations.
+                    <br>Education & Vocational Training Centers contributes to this by:
+                    <ul>
+                        <li>Empowering Vulnerable Groups: By equipping youth, women, and marginalized groups with vocational skills, these centers enable them to participate more actively in urban economies.</li>
+                        <li>Promoting Sustainable Urban Growth: Training in sustainable practices (e.g., green construction, waste management, or clean energy) contributes to environmentally responsible urban development.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="idea">
+                <h3>Mixed-Use Real Estate Projects</h3>
+                <p>
+                    Telecommunications services primarily align with SDG 9 (Industry, Innovation, and Infrastructure) and SDG 11 (Sustainable Cities and Communities) but contribute to several other SDGs as well.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflection Section -->
+    <section class="Reflection">
+        <h2>Course Reflections</h2>
+        <div class="reflection-box">
+            <ol>
+                <li>
+                    What are the kinds of problems we see in nature? (iteration, recursion, backtracking)
+                    <p class="ans">As discussed in the beginning of DAA, nature is something, we can provide real world problem solutions through nature. <br>Nature is all about patterns and Structures. 
+
+                        Repeated cycles of seasons- spring, summer, rainy, winter are iterative processes in nature.  They will repeat until some other climatic changes hit. <br>
+                        
+                        We saw patterns on the millipede and it follows recursion.
+                        
+                        Backtracking in real world nature, when the rabbits explore burrow systems. <br> If they don't find their way, they backtrack! <br> </p>
+                </li>
+                <li>
+                    What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth.
+                    <p class="ans">The extra space taken by the algorithm is the space efficiency. Whereas, the time taken by the algorithm is time efficiency.
+
+                        They are important in terms of costs, processing time and depends upon the memory too.
+                        
+                        <br> O(1) -> constant order of growth <br> O(n) -> linear order of growth <br> O(log n) -> logarithmic order of growth
+                    </p>
+                </li>
+                <li>
+                    Take away from different design principles from chapter 2?
+                    <p class="ans">After analyzing different algorithms, everything made sense with principles.
+
+                        Brave and cautious travel relates us to a BFS and DFS graph traversals.
+                        Prefixes and suffixes play important roles in the substring algorithm (Boyer Moore and KMP)
+                        
+                        Balancing and Rotations is necessary in AVL and black trees. We need all these principles to understand algorithms in a design approach manner!</p>
+                </li>
+                <li>
+                    The hierarchical data and how different tree data structures solve and optimize over problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)
+                    <p class="ans">The most efficient way to take down hierarchical data is using binary tree.
+                        Binary search trees can create skewed trees and in order to balance it, we moved to the notation of introducing more than one item in a node. Hence, we used AVL trees ( to rotate as it still introduced skewness)
+                        Red black trees is more easier to implement than AVL. Trie is used to spell check, and dictionary. Heap can be created based on different requirements and we heapify.</p>
+                </li>
+                <li>
+                    The need for array query algorithms and their implications. Their applications and principles need to be discussed.
+                    <p class="ans"> Websites like Amazon allow customers to filter products based on price ranges. 
+                        Shoppers can specify a minimum and maximum price to quickly find items that fit their budget. <br>
+                       <br> Financial trading platforms use range queries to allow traders to analyze stock performance over specific time periods. <br>
+                        <br> BIT with simpler code for range queries, operating on the principle of isolating the last bit.
+                        Array queries, look up table precomputes and keep the results. <br> </p>
+                </li>
+                <li>
+                    Differentiate between tree and graphs and their traversals. The applications of each.
+                    <p class="ans">  Tree <br>
+                        -A connected, acyclic graph with n nodes and n-1 edges. <br>
+                        -always has a root node. <br>
+                        -always connected. <br>
+                        -no cycles. <br>
+                        
+                       <br> Graphs <br>
+                        -Collection of vertices connected by edges, cyclic and even disconnected. <br>
+                        -no specific root unless mentioned. <br>
+                        -can be connected or disconnected. <br>
+                        -have cycles. <br>
+                        
+                        <br> Tree traversals <br>
+                        1. Pre order: Root,Left,Right <br>
+                        2. In order: Left, Root, Right <br>
+                        3. Post order: Left, Right, Root <br>
+                        <br> Eg: heap, BST for search, insert, delete <br>
+                        
+                        <br> Graph Traversals <br>
+                       <br> DFS: traverse as deep as possible before backtracking. <br>
+                         Eg: Road maps, Invitation problem. <br>
+                        
+                       <br> BFS: visit all neighbour nodes before moving. <br>
+                        Eg: Networks (social networks)</p>
+                </li>
+                <li>
+                    Deliberate on sorting and searching algorithms, the technique behind each and how they connect to the real world.
+                    <p class="ans">  Sorting algorithms organizes data into a specific order (ascending or descending) <br>
+
+                       <br> 1. Bubble Sort: repeatedly compares adjacent elements and swaps in order. <br>
+                        
+                        2. Insertion Sort: We Insertion, elements in correct positions. <br>
+                        
+                        3. Selection Sort: Selects the smallest or largest element from unsorted portion and places in sorted portion. <br>
+                        
+                        4. Merge sort: divides the arrays into halves and merge them. <br>
+                        
+                        5. Quick sort: picks a "pivot", partitions the array around it. <br>
+                        
+                       Applications:
+                        Database Management: Sorting records for efficient querying and indexing. 
+                        
+                        E-commerce: Displaying products based on price, rating. <br>
+                        
+                       <br> Searching Algorithm: locate a specific element in a data structure.
+                        This includes, linear and binary searches, graph- based Searches. 
+                        
+                       <br> Applications:
+                        Searching for files in hierarchical directories, Hash- based searches. <br> </p>
+                </li>
+                <li>
+                    Discuss the importance of graph algorithms with respect to spanning trees and shortest paths.
+                    <p class="ans">Spanning trees connect all vertices with minimal total edge weight, minimizing total network cost.
+                        Whereas, shortest path find the minimal path weight between specific vertices minimizing travel or traversal cost.
+                        
+                       <br> Real world application:
+                        Spanning trees: Building utility networks like water or gas pipelines <br> 
+                        Shortest path: optimizing traffic flow. <br> </p>
+                </li>
+                <li>
+                    Discuss the different studied algorithm design techniques.
+                    <p class="ans"> -Backtracking: N queens problem was discussed in the class. It involves solving all possible solutions and pruning which aren't required. <br>
+
+                        -Divide and conquer: Quick sort and Merge sort <br>
+                        
+                        -Shortest path: Floyd's, Dijkstra's.
+                        Here we find the shortest paths possible with the provided weights using or implementing a cost matrix. <br>
+                        
+                        -Graph traversal: Brace and Cautious travel helps us to traverse accordingly and backtrack when needed. <br> </p>
+                </li>
+            </ol>
+        </div>
+    </section>
+</body>
+</html>
