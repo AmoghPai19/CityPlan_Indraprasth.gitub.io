@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">City Design</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="amogh.html">Amogh</a></li>
+            <li><a href="bhoomika.html">Bhoomika</a></li>
+            <li><a href="#contact">Saanvi</a></li>
+            <li><a href="#contact">Ramya</a></li>
+        </ul>
+    </nav>
+
+    <!-- Business Ideas Section -->
+    <section class="business-ideas">
+        <h2 class="head">Identified Business Ideas</h2>
+        <div class="ideas-box">
+            <div class="idea">
+                <h3>Tourism</h3>
+                <p>
+                    Wildlife sustainable tourism is directly related to SDG 11.4.1 which focuses on preservation, protection and conservation of all cultural and natural heritage
+                    <br> We can establish a buisness based on:
+                    <ul>
+                        <li>Revenue generated can be reinvested in conservation projects.</li>
+                        <li>It provides economic benefits to local communities.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="idea">
+                <h3>Recycling Unit</h3>
+                <p>
+                    SDG 11.6.1  states that proportion of municipal solid waste collected and managed in controlled facilities out of total municipal waste generated, by cities.
+                    <br> Recycling supports this goal by:
+                    <ul>
+                        <li>Recycling unit reduces the environmental impact by reducing the waste.</li>
+                        <li>Recycling reduces the need of raw material extraction</li>
+                        <li>It reduces pollution and greenhouse gases caused due to the improper disposal of waste directly to the environment</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="idea">
+                <h3>Wheat processing unit</h3>
+                <p>
+                    SDG 2(zero hunger) and SDG 9(industry, innovation and infrastructure) are primarily targerted by this buisness idea but it indirectly leads to SDG 11.3.2 which states that Proportion of cities with a direct participation structure of civil society
+                <br>
+                Wheat processing unit will contribute towards this by:
+                <li>Enhancing local food production and distribution</li>
+                <li>Encouraging community involvement and providing local employment opportunities</li>
+            </p>
+            </div>
+
+            <div class="idea">
+                <h3>Production of Mulberry Silk</h3>
+                <p>
+                    SDG 8(Decent work and economic growth) and SDG 9(industry, innovation and infrastructure) are directly affected by this buisness idea and indirectly leads to the sdg 11.4.1 which focuses on preservation, protection and conservation of all cultural and natural heritage
+                    <br>Production of mulberry silk contributes to this by:
+                    <ul>
+                        <li>The cultivation of mulberry trees and the rearing of silkworms are environmentally friendly practices that promote biodiversity and sustainable land use</li>
+                        <li>Sericulture (silk farming) provides employment and income for rural communities, supporting sustainable economic growth</li>
+                        <li>Mulberry silk production contributes to the preservation of cultural heritage and traditional practices.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="idea">
+                <h3>Heathcare and fitness centres</h3>
+                <p>
+                    It primarily focuses on SDG 3(Good health and well being) but indirectly also leads to SDG 11.7.1 which that average share of the built-up area of cities that is open space for public use for all, by sex, age and persons with disabilities.
+                    <br>Health and fitness centres contribute to this by:
+                    <li>Establishing well-designed and safe healthcare and fitness environments contributes to the overall well-being of urban populations.</li>
+                    <li>By offering accessible healthcare and fitness facilities, these centers ensure that all community members, including marginalized groups, have access to health services and physical activities.</li>  
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflection Section -->
+    <section class="Reflection">
+        <h2>Course Reflections</h2>
+        <div class="reflection-box">
+            <ol>
+                <li>
+                    What are the kinds of problems we see in nature? (iteration, recursion, backtracking)
+                    <p class="ans">Nature poses a lot of complex problems. The life cycle, the food chain are some problems which can be solved using recursion. Predicting the climate change is a problem which can be solved using iteration. Bees use backtracking to find optimal path for foraging. When plants grow they mend themselves such that they get maximum sun exposure, this is another example of backtracking.</p>
+                </li>
+                <li>
+                    What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth.
+                    <p class="ans">Time efficiency is how fast an algorithm runs. Space efficiency is the extra space the algorithm runs.
+                        Time efficiency is important as in real world we prefer the algorithms which are quick and efficient.
+                        Space efficiency ensures optimal use of the resource (maximum utilization of minimal resources)                        
+                        <br> O(1): constant order of growth 
+                        <br> O(n): linear order of growth 
+                        <br> O(log n): logarithmic order of growth 
+                        <br> O(nlogn): Runtime increases more than linear but less than quadratic with input size.
+                        <br> O(n2): Runtime increases quadratically.
+                        <br> O(n3): Runtime increases cubic.
+                        <br> O(2^n): The runtime grows exponentially.
+                        <br> O(n!): The runtime grows extremely fast.
+                    </p>
+                </li>
+                <li>
+                    Take away from different design principles from chapter 2?
+                <p class="ans">The key takeaway from the design principles was how simple design principles simplified complex problems making the algorithms more efficient and effective. We broke down problems using principles like decomposition, pattern recognition and abstraction to make the task more manageable. Pruning(used in N-queens) and lazy propagation(used in segment trees) optimizes resource usage. From pruning we learn to eliminate the possible solutions which do not lead to the desired result. Lazy propagation is kind of like smart procrastination where it differs update until needed. Hierarchical order(BST) and level order traversal(BFS) help us to process data. From the principle of pre-computing used in lookup table we learn we can simplify the problem by storing the results of frequent operations. In heap we use the concept of parental dominance to increase the efficiency and maintain the hierarchical order. We learn how to speed up computations by bit manipulation used in Fenwick tree. The principle of brave and cautious traversal is used in DFS, BFS which help us to navigate the graph effectively.
+                    In all, these principles create efficient algorithms.
+                </p>  
+                </li>
+                <li>
+                    The hierarchical data and how different tree data structures solve and optimize over problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)
+                    <p class="ans">Binary search tree efficiently performs functions like searching and insertion. 2-3 trees maintain the depth of the tree. AVL trees are self balancing. Red-black trees balance themselves using colors. Heaps maintain the parental dominance and ease deletion. Tries search efficiently using prefix based searches. </p>
+                </li>
+                <li>
+                    The need for array query algorithms and their implications. Their applications and principles need to be discussed.
+                    <p class="ans">Array query algorithms are crucial for searching, updating and querying elements of an array. They are essentially used when handling huge datasets. Array queries are essential for accessing data within specific intervals. 
+                        <br>Lookup Tables:A lookup table for range queries is a data structure used to efficiently answer queries about a specific range of values in a dataset. It pre-computes information, such as minimum, maximum, or sum, for various intervals of data. Pre-computing is the concept used in it as it saves the results. 
+                        <br>Segment trees:Segment trees divides the array creating a binary tree. it has bottom up approach. It uses the principle of Lazy propagation. All the changes are stored and only updated when necessary. 
+                        <br>Sparse table:Sparse table is used for fast queries on a set of static data. It does preprocessing so that the queries can be answered efficiently. 
+                        <br>Fenwick Trees:Fenwick trees are used to find the sum, minimums/ maximums. Each node holds data for a range of specific elements making it quick. The principle used is bit manipulation.
+                        </p>
+                </li>
+                <li>
+                    Differentiate between tree and graphs and their traversals. The applications of each.
+                    <p class="ans">Trees
+                        <br>1. Trees have a hierarchical order with a single parent per node. Ensuring easy access for searching and organization. The give us a structured path.
+                        <br>2. Traversals are preorder, in order, post order.
+                        <br>3. Applications: they find applications to ease searching and insertion.
+                        
+                        <br>Graphs
+                        <br>1. Graphs have nodes and edges which can be either undirected or bidirected, weighted or unweighted. The display relationships between nodes. They provide us with efficient paths.
+                        <br>2. There are 2 methods of traversal for an unweighted graph: BFS and DFS.
+                        <br>3. Applications: Network routing.
+                        </p>
+                </li>
+                <li>
+                    Deliberate on sorting and searching algorithms, the technique behind each and how they connect to the real world.
+                    <p class="ans">Techniques include bubble sort, merge sort, quick sort, insertion sort, selection sort.
+                        <br>In bubble sort we compare the elements to the entire length and swap where needed. Selection sort is an improvement over this, which only swaps the minimum element. Inspired from the gamblers problem, Insertion sort is an improvement over this, which adds elements and shifts them accordingly.
+                        <br>Merge sort, quick sort and heap work on the principle of divide and conquer. Merge sort works similar to binary search by dividing it into halves. These algorithms divide, sort, and then join the results are repeat the process.
+                        <br>The real life applications of these are in websites to filter on basis of preferences and to sort huge datasets, the for transaction ordering or ranking in websites.
+                        <br>For searching we use linear search which searches linearly. In binary search we divide the data in halves. Applications include using search tools or retrieving some information from datasets.</p>
+                </li>
+                <li>
+                    Discuss the importance of graph algorithms with respect to spanning trees and shortest paths.
+                    <p class="ans">Graph algorithms are essential for solving such problems. If we need to find the maximum/minimum cost required for traversal we use the algorithms Kruskal and Prim's. This minimizes the cost of traversal. Applications include minimizing the cost of laying cables, pipelines and developing network. When we need to find the shortest path to navigate we use algorithms like- Dijkstra, Floyd Warshall. They are essential for network routing, mapping etc. Thus spanning trees and shortest paths enhance the efficiency and reduce cost.</p>
+                </li>
+                <li>
+                    Discuss the different studied algorithm design techniques.
+                    <p class="ans">The first design technique we learned about in the class was backtracking. To understand we solved problems such as n-queens problem, subset generation. We solve every possible was and prune/eliminate the answer which is not needed. 
+                        <br>The next design technique encountered was the way of traversing the graph. There are two ways to traverse the graph- Breadth First search (BFS) and Depth First Search (DFS). In BFS we visited the nodes directly connected to the source node first and sequentially visited all nodes. In DFS we first go along a single path and then when we return back to the source, only then do we explore other paths. We saw various sorting techniques which used the principle of divide and conquer. By dividing it into smaller parts and then integrating it. In string matching we came across design principles such as brute-force, hashing and algorithms like Boyer Moore . We then saw problems the greedy problem in which we find the shortest path between nodes in a weighted graph. 
+                        </p>
+                </li>
+            </ol>
+        </div>
+    </section>
+</body>
+</html>
