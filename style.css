@@ -372,6 +372,49 @@ th {
     font-weight: 500;
 }
 
+/*Implementation*/
+.implementation {
+    padding: 2rem;
+    text-align: center;
+}
+
+.implementation-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.implementation li {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+.implementation p {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.code {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #28bddb;
+}
+
+.code:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+}
+
 
 /* Keyframe Animations */
 @keyframes fadeIn {
