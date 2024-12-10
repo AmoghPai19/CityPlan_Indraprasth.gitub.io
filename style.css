@@ -1,4 +1,4 @@
-/* General Style */
+/* General Styles */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -373,6 +373,7 @@ th {
 }
 
 /*Implementation*/
+
 .implementation {
     padding: 2rem;
     text-align: center;
