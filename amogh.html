@@ -128,5 +128,44 @@
             </ol>
         </div>
     </section>
+    <section class="implementation">
+        <h2>Implementation</h2>
+        <div class="implementation-box">
+            <div class="idea">
+                <h3>Education & Vocational Training Centers</h3>
+                <p>To efficiently place Education and Vocational Training Centers so everyone can access them easily, we can use graph traversal algorithms. Let us consider that the localities or towns are the
+                     nodes and roads connections with weights as the distance between the travel time.
+                    Dijkstra’s algorithm helps calculate the shortest path from one center to all towns, 
+                    useful for checking accessibility. Floyd's algorithm helps us finds the shortest paths between all towns, helpful for analyzing overall connectivity.
+                    Kruskals algorithm helps us find a Minimum Spanning Tree (MST) to connect nodes at minimum cost.
+                   <ul>
+                    <li>Dijkstra’s Algorithm:
+                        <p>If we already know where to place the centers then we can use Dijkstras algorithm to find the 
+                            shortest path for the people to reach their nearest centers.By using Dijkstras we can place the centers in such a way the people from different areas can easily access the centers in the most efficient way possible. <br>
+                        <br><a href="#dijkistras" class="code">Sample Code for Dijkstras</a> </p>
+
+                    </li>
+                   </ul>
+                </p>
+            </div>
+            <div class="idea">
+                <h3>Telecommunications Services</h3>
+                <p>Kruskals algorithm can be used in this case to find a Minimum Spanning Tree (MST).
+                    We can relate this situation to a graph with the towers for the Telecommunication services as 
+                    the nodes and the fibre optics cables used for fast communication as the edges between the nodes 
+                    and the cost per unit length of laying the cables as the weight on the edge between each node. Now
+                     Kruskals algorithm will help us to find the most efficient route for laying the cables with the least possible cost.
+                   <ul>
+                    <li>Kruskal’s Algorithm:
+                        <p>Kruskal's algorithm is used to find a Minimum Spanning Tree (MST), which connects all nodes in a graph with the least total cost. It’s helpful for efficiently connecting towers, like setting up fiber optics or signal relays, while minimizing expenses. However, it doesn’t focus on maximizing area coverage. Its time complexity is 
+                           O(E log E), making it efficient for interconnecting towers but less useful for planning their placement to cover a wide area. <br>
+                        <br><a href="#kruskals" class="code">Sample Code for Kruskal’s</a> </p>
+
+                    </li>
+                   </ul>
+                </p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
