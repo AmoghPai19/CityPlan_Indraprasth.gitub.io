@@ -416,6 +416,34 @@ th {
     transform: scale(1.05);
 }
 
+.breakdown-head{
+    padding: 2rem;
+    text-align: center;
+}
+
+.case-head{
+    padding: 2rem;
+    text-align: center;
+}
+
+.beakdown-box{
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    color: black;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+
+}
+.case-breakdown li {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    padding: 3px;
+}
 
 /* Keyframe Animations */
 @keyframes fadeIn {
