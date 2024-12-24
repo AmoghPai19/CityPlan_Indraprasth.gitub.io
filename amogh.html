@@ -132,6 +132,18 @@
         <h2>Implementation</h2>
         <div class="implementation-box">
             <div class="idea">
+                <h3>Affordable Clean Energy Solutions</h3>
+                <p>In the case of implementing Affordable Clean Energy Solutions, the algorithm for the shortest path can be used to optimize the routes for energy transmission, ensuring the energy reaches consumers in the shortest and most cost-effective way.
+                   <ul>
+                    <li>Dijkstra’s Algorithm:
+                        <p>If we already know where to place the centers then we can use Dijkstras algorithm to find the shortest path for the people to reach their nearest centers.By using Dijkstras we can place the centers in such a way the people from different areas can easily access the centers in the most efficient way possible. <br>
+                        <br><a href="#dijkistras" class="code">Sample Code for Dijkstra’s Algorithm</a> </p>
+
+                    </li>
+                   </ul>
+                </p>
+            </div>
+            <div class="idea">
                 <h3>Education & Vocational Training Centers</h3>
                 <p>To efficiently place Education and Vocational Training Centers so everyone can access them easily, we can use graph traversal algorithms. Let us consider that the localities or towns are the
                      nodes and roads connections with weights as the distance between the travel time.
@@ -139,10 +151,25 @@
                     useful for checking accessibility. Floyd's algorithm helps us finds the shortest paths between all towns, helpful for analyzing overall connectivity.
                     Kruskals algorithm helps us find a Minimum Spanning Tree (MST) to connect nodes at minimum cost.
                    <ul>
-                    <li>Dijkstra’s Algorithm:
-                        <p>If we already know where to place the centers then we can use Dijkstras algorithm to find the 
-                            shortest path for the people to reach their nearest centers.By using Dijkstras we can place the centers in such a way the people from different areas can easily access the centers in the most efficient way possible. <br>
-                        <br><a href="#dijkistras" class="code">Sample Code for Dijkstras</a> </p>
+                    <li>Floyd's algorithm:
+                        <p>If we already know where to place the centers, we can use Floyd-Warshall's algorithm to find the shortest paths between all pairs of locations, including the centers and the people's homes.
+                             By applying Floyd-Warshall's algorithm, we can determine the shortest paths for people to reach their nearest centers. <br>
+                        <br><a href="#dijkistras" class="code">Sample Code for Floyd's algorithm</a> </p>
+
+                    </li>
+                   </ul>
+                </p>
+            </div>
+            <div class="idea">
+                <h3>E-commerce & Online Marketplaces</h3>
+                <p>To successfully implement an e-commerce marketplace, we can use a wide variety of algorithms.
+                     For example, binary search can be used to quickly search for products, merge sort can help sort the products, 
+                    and recommendation engines can suggest different products to the user.
+                   <ul>
+                    <li>Binary Search algorithm:
+                        <p>Binary Search is a highly efficient algorithm used to find a  value within a sorted array or list. It works 
+                            by repeatedly dividing the search interval in half, which allows it to search through large datasets much faster than linear search. <br>
+                        <br><a href="#dijkistras" class="code">Sample Code for Binary Search algorithm</a> </p>
 
                     </li>
                    </ul>
@@ -159,7 +186,7 @@
                     <li>Kruskal’s Algorithm:
                         <p>Kruskal's algorithm is used to find a Minimum Spanning Tree (MST), which connects all nodes in a graph with the least total cost. It’s helpful for efficiently connecting towers, like setting up fiber optics or signal relays, while minimizing expenses. However, it doesn’t focus on maximizing area coverage. Its time complexity is 
                            O(n log n), making it efficient for interconnecting towers. <br>
-                        <br><a href="https://github.com/AmoghPai19/DSA_CodeLibrary/blob/4d08f48956ee45cc1f208a65b56726f3adf2af5d/Kruskal's%20Algorithm/Kruskal's.cpp" class="code">Sample Code for Kruskal’s</a> </p>
+                        <br><a href="#kruskals" class="code">Sample Code for Kruskal’s</a> </p>
 
                     </li>
                    </ul>
@@ -168,19 +195,172 @@
             <div class="idea">
                 <h3>Microfinance or Lending Services</h3>
                 <p>A sorting algorithm can be used for this case.Sorting algorithms can be used to arrange the applicants based on their credit score or the size 
-                    of the loan or the urgency of the loan.Overall, sorting is an essential tool for balancing risk, maximizing impact, and improving  
+                    of the loan or the urgency of the loan. Overall, sorting is an essential tool for balancing risk, maximizing impact, and improving  
                     efficiency in microfinancing. We can use sorting algorithms like Quick sort and merge sort for this purpose as they are good at handeling large data efficiently.
                    <ul>
                     <li>Quick sort:
                         <p>Quick Sort is an efficient comparison based sorting algorithm that uses a divide-and-conquer strategy to sort an array or list. Quick sort is useful in this 
                             scenario because of the nature of data and the large amounts of data, as quick sort is efficient in sorting large amounts of data and has an efficiency O(1.38n log n) in the average case. <br>
-                        <br><a href="https://github.com/AmoghPai19/DSA_CodeLibrary/blob/ea42a10c2f7eeeae651543ea5cf05db75f0eb24f/Sorting%20Alogithms/QuickSort.cpp" class="code">Sample Code for Quick sort</a> </p>
+                        <br><a href="#kruskals" class="code">Sample Code for Quick sort</a> </p>
 
                     </li>
                    </ul>
                 </p>
             </div>
         </div>
+    </section>
+    <section class="case-breakdown">
+        <h2 class="breakdown-head">Breakdown Of Business Ideas</h2>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Education & Vocational Training Centers</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            As the city aims to become a self-sufficient, sustainable, and developed city, 
+                            educational institutions play an important role in this process. For this, it is 
+                            important to set up educational institutions across the entire city in such a way 
+                            that they are accessible to all the people.
+                        </li>
+                        <li>
+                            To achieve this, we will first analyze the total number of eligible students/people 
+                            who will access these educational institutions. This can be done using a <b>basic summation algorithm</b>. 
+                            The next step is to arrange the areas based on the number of people who will be accessing these institutions,
+                             which can be done using sorting algorithms such as <b>quick sort and merge sort</b>.
+
+                        </li>
+                        <li>Once we have sorted the areas based on population, we can finalize the locations and sizes of these institutions.
+                             The size of an institution will depend on the number of people attending it. Hence, larger institutions will be set 
+                             up in more populated areas based on the sorted list.
+                        </li>
+                        <li>The next step is to strategically select the locations of the institutions to ensure that they do not cause any harm to
+                             the environment in the process of building it. After selecting the locations for the educational institutions, the next 
+                             task is to set up a bus or pickup/drop service for all the students attending these institutions.
+                        </li>
+                        <li>For this, we need to design an efficient and cost-saving route for the buses to drop each student at their home. 
+                            This can be done using an <b>all-pairs shortest path algorithm like Floyd's algorithm.</b> We can consider the institution
+                             and the homes of each student as the nodes, and the roads connecting these areas as the edges, with weights as the travel cost.
+                              By applying <b>Floyd's algorithm</b> to this graph representation, we can design the most efficient route for dropping off each student.
+                        </li>
+                        <li>Now that we have set up institutions in strategic locations accessible to all, it is important for these institutions to function in an 
+                            organized manner to ensure a smooth and hassle-free experience. To achieve this, we need to keep a record of each student. This can be done
+                             using an <b>array of structures</b> to store student information such as name, roll number, contact details, etc.
+                        </li>
+                        <li>For the admission process, we can use a <b>queue data structure</b> to provide admission on a first-come, first-served basis. Alternatively, we can 
+                            sort the students based on their marks using a <b>sorting technique</b> and then provide admission based on the marks obtained by each student.
+                        </li>
+                        <li>
+                            Other sensitive data regarding students, such as their Aadhaar number or parents' bank details, can be stored securely using <b>hashing algorithms.</b>
+                        </li>
+                    </ul>
+                    <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li>Basic summation algorithm</li>
+                        <li>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</li>
+                        <li>Floyd's algorithm</li>
+                        <li>Array of structures</li>
+                        <li>Queue data structure</li>
+                        <li>Hashing algorithms</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Microfinance or Lending Services</h2>
+                <p>Micro-financing and lending services play an important role in the development of a city. They help people with low incomes access financial resources for housing improvements or purchases. This leads to the overall development of infrastructure in the city.
+
+                    To implement this, we first need to store all the customer data,
+                     for which we can use an <b>array of structures.</b> To ensure the correct
+                      order of loan distribution, we can use <b>priority queues based on heaps,</b> 
+                       distributing loans based on the urgency of the requirement. Another important
+                        factor to consider is the credit scores, which determine whether loans are approved.
+                         This can be done using <b>sorting algorithms</b> to sort the list based on credit scores.Further <b>hashing</b> can be used to store sensitive customer data securely.
+                         <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</li>
+                        <li>Array of structures</li>
+                        <li>Priority Queues</li>
+                        <li>Hashing algorithms</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">E-commerce & Online Marketplaces</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            E-commerce and online marketplaces play an important role 
+                            in boosting the economy of a city. They also make the lives of 
+                            people easier by providing doorstep deliveries. There are various
+                             algorithms that can be used to implement an online e-commerce 
+                             marketplace. 
+                        </li>
+                        <li>
+                            Firstly, we can use <b>binary search</b> to search for products from a list of different products. We can also use tries for the autocomplete feature during typing in the search bar.
+                        </li>
+                        <li>
+                            We can use <b>string matching algorithms like KMP and Rabin-Karp</b> to 
+                            search for names of the products efficiently in the database. The 
+                            next thing is that we can use <b>sorting algorithms</b> to sort the products
+                             based on prices, ratings, and popularity. We can use <b>recommendation
+                                engines</b> to recommend products to users based on their previous 
+                              purchases or viewed products. 
+                        </li>
+                        <li>
+                            Lastly, at the time of delivery, we can use shortest path algorithms like 
+                            <b>Dijkstra’s Algorithm</b> to optimize delivery routes. This can be done by
+                             considering the storage hub as the source node where all the products 
+                             have been collected from different parts of the country and are ready
+                              to be set out for delivery. The other nodes are the houses of the 
+                              customers to whom the products need to be delivered. The routes
+                               joining them are the edges, with weights as the cost of travel. 
+                        </li>
+                        <li>
+                            Now, by using <b>Dijkstra’s Algorithm</b>, we find the most efficient route to 
+                            deliver the products to the customers' houses.
+                        </li>
+                        <li><b>Arrays and lists</b> can be used for storing product lists, order details, user carts, or customer feedback.
+
+                        </li>
+                        <li><b>Stack </b>can be used to keep track of undo actions in the shopping cart and for implementing backtracking </li>
+                        <li><b>Union-Find </b> can be used for managing user groups or authentication-related tasks.</li>
+                    </ul>
+                    <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li>Binary Search</li>
+                        <li>String Search:- KMP & Rabin Karp</li>
+                        <li>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</li>
+                        <li>Recommendation engines</li>
+                        <li>Trie</li>
+                        <li>Dijkstra’s</li>
+                        <li>Arrays & Lists</li>
+                        <li>Stack</li>
+                        <li>Union-Find</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Telecommunications Services</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+
+
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
     </section>
 </body>
 </html>
