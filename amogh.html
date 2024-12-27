@@ -128,89 +128,119 @@
             </ol>
         </div>
     </section>
-    <section class="implementation">
-        <h2>Implementation</h2>
-        <div class="implementation-box">
-            <div class="idea">
-                <h3>Affordable Clean Energy Solutions</h3>
-                <p>In the case of implementing Affordable Clean Energy Solutions, the algorithm for the shortest path can be used to optimize the routes for energy transmission, ensuring the energy reaches consumers in the shortest and most cost-effective way.
-                   <ul>
-                    <li>Dijkstra’s Algorithm:
-                        <p>If we already know where to place the centers then we can use Dijkstras algorithm to find the shortest path for the people to reach their nearest centers.By using Dijkstras we can place the centers in such a way the people from different areas can easily access the centers in the most efficient way possible. <br>
-                        <br><a href="#dijkistras" class="code">Sample Code for Dijkstra’s Algorithm</a> </p>
 
-                    </li>
-                   </ul>
-                </p>
-            </div>
-            <div class="idea">
-                <h3>Education & Vocational Training Centers</h3>
-                <p>To efficiently place Education and Vocational Training Centers so everyone can access them easily, we can use graph traversal algorithms. Let us consider that the localities or towns are the
-                     nodes and roads connections with weights as the distance between the travel time.
-                    Dijkstra’s algorithm helps calculate the shortest path from one center to all towns, 
-                    useful for checking accessibility. Floyd's algorithm helps us finds the shortest paths between all towns, helpful for analyzing overall connectivity.
-                    Kruskals algorithm helps us find a Minimum Spanning Tree (MST) to connect nodes at minimum cost.
-                   <ul>
-                    <li>Floyd's algorithm:
-                        <p>If we already know where to place the centers, we can use Floyd-Warshall's algorithm to find the shortest paths between all pairs of locations, including the centers and the people's homes.
-                             By applying Floyd-Warshall's algorithm, we can determine the shortest paths for people to reach their nearest centers. <br>
-                        <br><a href="#dijkistras" class="code">Sample Code for Floyd's algorithm</a> </p>
-
-                    </li>
-                   </ul>
-                </p>
-            </div>
-            <div class="idea">
-                <h3>E-commerce & Online Marketplaces</h3>
-                <p>To successfully implement an e-commerce marketplace, we can use a wide variety of algorithms.
-                     For example, binary search can be used to quickly search for products, merge sort can help sort the products, 
-                    and recommendation engines can suggest different products to the user.
-                   <ul>
-                    <li>Binary Search algorithm:
-                        <p>Binary Search is a highly efficient algorithm used to find a  value within a sorted array or list. It works 
-                            by repeatedly dividing the search interval in half, which allows it to search through large datasets much faster than linear search. <br>
-                        <br><a href="#dijkistras" class="code">Sample Code for Binary Search algorithm</a> </p>
-
-                    </li>
-                   </ul>
-                </p>
-            </div>
-            <div class="idea">
-                <h3>Telecommunications Services</h3>
-                <p>Kruskals algorithm can be used in this case to find a Minimum Spanning Tree (MST).
-                    We can relate this situation to a graph with the towers for the Telecommunication services as 
-                    the nodes and the fibre optics cables used for fast communication as the edges between the nodes 
-                    and the cost per unit length of laying the cables as the weight on the edge between each node. Now
-                     Kruskals algorithm will help us to find the most efficient route for laying the cables with the least possible cost.
-                   <ul>
-                    <li>Kruskal’s Algorithm:
-                        <p>Kruskal's algorithm is used to find a Minimum Spanning Tree (MST), which connects all nodes in a graph with the least total cost. It’s helpful for efficiently connecting towers, like setting up fiber optics or signal relays, while minimizing expenses. However, it doesn’t focus on maximizing area coverage. Its time complexity is 
-                           O(n log n), making it efficient for interconnecting towers. <br>
-                        <br><a href="#kruskals" class="code">Sample Code for Kruskal’s</a> </p>
-
-                    </li>
-                   </ul>
-                </p>
-            </div>
-            <div class="idea">
-                <h3>Microfinance or Lending Services</h3>
-                <p>A sorting algorithm can be used for this case.Sorting algorithms can be used to arrange the applicants based on their credit score or the size 
-                    of the loan or the urgency of the loan. Overall, sorting is an essential tool for balancing risk, maximizing impact, and improving  
-                    efficiency in microfinancing. We can use sorting algorithms like Quick sort and merge sort for this purpose as they are good at handeling large data efficiently.
-                   <ul>
-                    <li>Quick sort:
-                        <p>Quick Sort is an efficient comparison based sorting algorithm that uses a divide-and-conquer strategy to sort an array or list. Quick sort is useful in this 
-                            scenario because of the nature of data and the large amounts of data, as quick sort is efficient in sorting large amounts of data and has an efficiency O(1.38n log n) in the average case. <br>
-                        <br><a href="#kruskals" class="code">Sample Code for Quick sort</a> </p>
-
-                    </li>
-                   </ul>
-                </p>
-            </div>
-        </div>
-    </section>
     <section class="case-breakdown">
-        <h2 class="breakdown-head">Breakdown Of Business Ideas</h2>
+        <h2 class="breakdown-head">Detailed Breakdown Of Business Ideas</h2>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Affordable Clean Energy Solutions</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            Providing Affordable Clean Energy Solutions is 
+                            necessary for a developing city as it promotes 
+                            sustainable development and reduces the dependency
+                             on fossil fuels. This also supports economic growth
+                            by creating job opportunities and provides a reliable, 
+                            long term cost efficient source of energy.  
+
+                        </li>
+                        <li>
+                            For implementing an Affordable Clean Energy Solutions business, 
+                            there are various different algorithms that can be used to make 
+                            the business run more efficiently. We can represent the whole distribution
+                            network as a graph with nodes as power grids and houses to which the energy 
+                            must be supplied, and the routes for this transmission are the edges.
+                        </li>
+                        <li>
+                            We can make use of <b>Prim's algorithm</b> to find the MST (minimum spanning tree) to 
+                            lay down the routes for energy distribution at the lowest cost possible. We are 
+                            using Prim's over Kruskal's as the graph network with the edges as cables between 
+                            the houses and power grids is dense with many cables (edges) hence, Prim's is a better
+                             algorithm to find the MST in a dense graph.
+                        </li>
+                        <li>
+                            Next, we can use shortest path algorithms like <b>Dijkstra's algorithm</b> to optimize the location 
+                            of the power grids, and for efficient distribution of energy to all the houses, we can take the
+                            main power station as the source node and apply Dijkstra's on the graph representation to find 
+                            the shortest paths to distribute the energy from the source.
+                        </li>
+                        <li>
+                            We can also use <b>sorting algorithms</b> to sort the areas based on the populations so that we can place
+                             an appropriately sized grid based on the population.
+                        </li>
+                        <li>
+                            We can use an <b>adjacency list</b>adjacency list to represent the dynamic flow of energy in smart grids and renewable 
+                            energy systems. This helps optimize routing and resource management. 
+                        </li>
+                        <li>
+                            A <b>look-up table</b> is a data structure that stores pre-computed values for fast retrieval. 
+                            This can be used to quickly access large amounts of data in the case of an energy distribution system. 
+                            It can be used to retrieve the energy consumption data of a particular consumer or a building. 
+                        </li>
+                        <li>
+                            <b>BIT or Fenwick tree</b> works on the concept of isolating the last bit and is efficient in the case of range queries.
+                            We are using BIT over segment trees as BIT is easier t implement due to its simple code.
+                            BIT can be used to calculate the total energy consumption of a consumer over a specific time period.  
+                        </li>
+                    </ul>
+                    <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li><b>Prim's Algorithm</b>
+                            <p>Prim's Algorithm is a greedy algorithm used to find the Minimum Spanning Tree (MST) 
+                                of a connected, undirected graph with weighted edges<br>
+                                Efficiency: O(|E|log|V|)<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Prim's Algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Dijkstra's algorithm</b>
+                            <p>Dijkstra's Algorithm is a well-known greedy algorithm used for finding the shortest path 
+                                from a source vertex to all other vertices in a weighted graph (where the weights are non-negative).<br>
+                                Efficiency: O(|E|log|V|)<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Dijkstra's algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
+                            <p>Sorting algorithms are fundamental algorithms used to arrange elements in a specific order 
+                                (usually in ascending or descending order). <br>
+                                Efficiency: <br>
+                                Quick Sort:<br>
+                                Best case: O(n log n)<br>
+                                Avg case: O(1.38n log n)<br>
+                                Worst case: O(n^2)<br><br>
+
+                                Merge Sort:O(n log n)<br><br>
+
+                                Heap Sort: O(n log n)<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Sorting Algorithms</a>
+                            </p>
+                        </li>
+                        <li><b>Adjacency list</b>
+                            <p>An adjacency list is a common way to represent a graph in computer science. In an adjacency list, each node 
+                                (or vertex) of the graph maintains a list (or a set) of its neighbors (the vertices it is connected to). <br><br>
+                                <a href="#kruskals" class="code">Sample Code for Adjacency list</a>
+                            </p>
+                        </li>
+                        <li><b>Lookup table</b>
+                            <p>
+                                A lookup table is a data structure that is used to store pre-computed values for quick retrieval. <br>
+                                Efficiency: O(1)<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Lookup table</a>
+                            </p>
+                        </li>
+                        <li><b>BIT or Fenwick tree</b>
+                            <p>BIT or Fenwick tree works on the concept of isolating the last bit and is 
+                                efficient in processing of range queries. <br>
+                                Efficiency: O(log n) <br><br>
+                                <a href="#kruskals" class="code">Sample Code for BIT</a>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+        <br>
         <div class="beakdown-box">
             <div class="cases">
                 <h2 class="case-head">Education & Vocational Training Centers</h2>
@@ -255,12 +285,51 @@
                     </ul>
                     <h3>Algorithms/Data-structures Used:</h3>
                     <ul>
-                        <li>Basic summation algorithm</li>
-                        <li>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</li>
-                        <li>Floyd's algorithm</li>
-                        <li>Array of structures</li>
-                        <li>Queue data structure</li>
-                        <li>Hashing algorithms</li>
+                        <li><b>Basic summation algorithm</b>
+                            <p>Calculates the sum of all the elements of an Array.
+                                Efficiency: O(1)<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Basic summation</a>
+                            </p>
+                        </li>
+                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
+                            <p>Sorting algorithms are fundamental algorithms used to arrange elements 
+                                in a specific order (usually in ascending or descending order).<br>
+                                Efficiency: 
+                                Quick Sort:<br>
+                                Best case: O(n log n)<br>
+                                Avg case: O(1.38n log n)<br>
+                                Worst case: O(n^2)<br><br>
+
+                                Merge Sort:O(n log n)<br><br>
+
+                                Heap Sort: O(n log n)<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Sorting Algorithms</a>
+                            </p>
+                        </li>
+                        <li><b>Floyd's algorithm</b>
+                            <p>The Floyd-Warshall algorithm is an algorithm used to find the shortest paths 
+                                between all pairs of nodes in a weighted graph.<br>
+                                Efficiency: O(n^3)<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Floyd's algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Array of structures</b>
+                            <p>An array of structures is a collection of multiple structure variables stored sequentially in memory.<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Array of structures</a>
+                            </p>
+                        </li>
+                        <li><b>Queue data structure</b>
+                            <p>A queue is a linear data structure that follows the FIFO (First In, First Out) principle. This means that 
+                                the element added first will be removed first.<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Basic Queue</a>
+                            </p>
+                        </li>
+                        <li><b>Hashing algorithms</b>
+                            <p>Hashing algorithms are methods used to map data (such as a string, number, or any type of object) to a fixed-size 
+                                value called a hash value.<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Hashing algorithms</a>
+                            </p>
+                        </li>
                     </ul>
                 </p>
             </div>
@@ -280,10 +349,41 @@
                          This can be done using <b>sorting algorithms</b> to sort the list based on credit scores.Further <b>hashing</b> can be used to store sensitive customer data securely.
                          <h3>Algorithms/Data-structures Used:</h3>
                     <ul>
-                        <li>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</li>
-                        <li>Array of structures</li>
-                        <li>Priority Queues</li>
-                        <li>Hashing algorithms</li>
+                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
+                            <p>Sorting algorithms are fundamental algorithms used to 
+                                arrange elements in a specific order (usually in ascending or descending order).<br>
+                                Efficiency:<br>
+                                Quick Sort:<br>
+                                Best case: O(n log n)<br>
+                                Avg case: O(1.38n log n)<br>
+                                Worst case: O(n^2)<br><br>
+
+                                Merge Sort:O(n log n)<br><br>
+
+                                Heap Sort: O(n log n)<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Sorting Algorithms</a>
+                            </p>
+                        </li>
+                        <li><b>Array of structures</b>
+                            <p>An array of structures is a collection of multiple structure variables stored sequentially in memory.<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Array of structures</a>
+                            </p>
+                        </li>
+                        <li><b>Priority Queues</b>
+                            <p>
+                                A Priority Queue (PQ) is a type of data structure that stores elements with associated priorities. 
+                                In a priority queue, each element has a priority value, and the element with the highest priority is
+                                 dequeued first<br>
+                                 Efficiency: O(log n)<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Priority Queue</a>
+                            </p>
+                        </li>
+                        <li><b>Hashing algorithms</b>
+                            <p>Hashing algorithms are methods used to map data (such as a string, number, or any type of object) 
+                                to a fixed-size value called a hash value<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Hashing algorithm</a>
+                            </p>
+                        </li>
                     </ul>
                 </p>
             </div>
@@ -333,15 +433,82 @@
                     </ul>
                     <h3>Algorithms/Data-structures Used:</h3>
                     <ul>
-                        <li>Binary Search</li>
-                        <li>String Search:- KMP & Rabin Karp</li>
-                        <li>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</li>
-                        <li>Recommendation engines</li>
-                        <li>Trie</li>
-                        <li>Dijkstra’s</li>
-                        <li>Arrays & Lists</li>
-                        <li>Stack</li>
-                        <li>Union-Find</li>
+                        <li><b>Binary Search</b>
+                            <p>Binary Search is an efficient algorithm for finding an item from a sorted list or array. <br>
+                                Efficiency:
+                                Best case: O(1)<br>
+                                Worst case & Avg case: O(log n)<br><br><br>
+                                <a href="#kruskals" class="code">Sample Code for Binary Search</a>
+                            </p>
+                        </li>
+                        <li><b>String Search:- KMP & Rabin Karp</b>
+                            <p>String search algorithms are used to find a substring or pattern inside a string or text.<br>
+                                Efficiency:
+                                KMP:<br>
+                                Best case:<br>
+                                Avg case:<br>
+                                worst case:<br><br>
+                                Rabin Karp:<br>
+                                Best case:<br>
+                                Avg case:<br>
+                                worst case:<br><br>
+                                <a href="#kruskals" class="code">Sample Code for String Search</a>
+                            </p>
+                        </li>
+                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
+                            <p>Sorting algorithms are fundamental algorithms used to arrange elements in
+                                a specific order (usually in ascending or descending order).<br>
+                                Efficiency: <br>
+                                Quick Sort:<br>
+                                Best case: O(n log n)<br>
+                                Avg case: O(1.38n log n)<br>
+                                Worst case: O(n^2)<br><br>
+
+                                Merge Sort:O(n log n)<br><br>
+
+                                Heap Sort: O(n log n)<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Sorting Algorithms</a>
+                            </p>
+                        </li>
+                        <li><b>Recommendation engines</b>
+                            <p>A recommendation engine (or recommendation system) is a type of software system that 
+                                suggests products, services, or content to users based on their preferences, behavior, or other data. <br><br>
+                                <a href="#kruskals" class="code">Sample Code for Recommendation engines</a>
+                            </p>
+                        </li>
+                        <li><b>Trie</b>
+                            <p>A Trie is a specialized tree-like data structure used for dealing with applications involving search operations
+                                 like autocomplete, dictionary lookups, and spell checking.<br>
+                                Efficiency: O(l) where l is length of string.<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Trie</a>
+                            </p>
+                        </li>
+                        <li><b>Dijkstra's algorithm</b>
+                            <p>Dijkstra's Algorithm is a well-known greedy algorithm used for finding the shortest path 
+                                from a source vertex to all other vertices in a weighted graph (where the weights are non-negative).<br>
+                                Efficiency: O(|E|log|V|)<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Dijkstra's algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Arrays & Lists</b>
+                            <p>An array is a collection of elements, typically of the same type, stored in contiguous memory locations. 
+                                A list is a more flexible data structure than an array, often allowing for dynamic resizing. Lists can 
+                                store elements of different types<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Arrays & lists</a>
+                            </p>
+                        </li>
+                        <li><b>Stack</b>
+                            <p>A stack is a linear data structure that follows the Last In, First Out (LIFO) principle, meaning the last element added to the stack is the first one to be removed. <br><br>
+                                <a href="#kruskals" class="code">Sample Code for Stack</a>
+                            </p>
+                        </li>
+                        <li><b>Union-Find</b>
+                            <p>The Union-Find structure is particularly useful in applications where you need to efficiently manage and query dynamic connectivity, such as in graph algorithms 
+                                e.g: Kruskal's Minimum Spanning Tree algorithm and in network connectivity problems.<br>
+                                Efficiency: O(n)<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Union-Find</a>
+                            </p>
+                        </li>
                     </ul>
                 </p>
             </div>
@@ -379,10 +546,40 @@
                         </li>
                     </ul>
                     <ul>
-                        <li>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</li>
-                        <li>Queue Data structure</li>
-                        <li>Kruskal’s algorithm</li>
-                        <li>Hashing algorithms</li>
+                        <li><b>Sorting Algorithms:- Quick Sort, Merge Sort, Heap Sort</b>
+                            <p>Sorting algorithms are fundamental algorithms used to arrange elements in a 
+                                specific order (usually in ascending or descending order).<br>
+                                Efficiency:
+                                Quick Sort:<br>
+                                Best case: O(n log n)<br>
+                                Avg case: O(1.38n log n)<br>
+                                Worst case: O(n^2)<br><br>
+
+                                Merge Sort:O(n log n)<br><br>
+
+                                Heap Sort: O(n log n)<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Sorting Algorithms</a>
+                            </p>
+                        </li>
+                        <li><b>Queue Data structure</b>
+                            <p>A queue is a linear data structure that follows the FIFO (First In, First Out) principle. This means that the element added first will be removed first.<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Queue</a>
+                            </p>
+                        </li>
+                        <li><b>Kruskal’s algorithm</b>
+                            <p>Kruskal's algorithm is a well-known greedy algorithm used to find the Minimum Spanning Tree (MST) 
+                                of a connected, undirected graph.<br>
+                                
+                                Efficiency:<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Kruskal’s algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Hashing algorithms</b>
+                            <p>Hashing algorithms are methods used to map data (such as a string, number, or any type of object) 
+                                to a fixed-size value called a hash value<br><br>
+                                <a href="#kruskals" class="code">Sample Code for Hashing algorithm</a>
+                            </p>
+                        </li>
                     </ul>
                 </p>
             </div>
