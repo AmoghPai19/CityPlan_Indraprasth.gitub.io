@@ -208,62 +208,269 @@
             </ol>
         </div>
     </section>
-    <section class="implementation">
-        <h2>Implementation</h2>
-        <div class="implementation-box">
-            <div class="idea">
-                <h3>Autonomous Delivery Services</h3>
-                <p> In this particular business case, we can apply KRUSKAL's algorithm to find the minimum spanning tree (MST).
-                    Considering, the example of ZEPTO delivery services, our city would implement the same but using this algorithm.
-                    FASTER the service, HAPPIER the customer is the goal (successful business implementation too). <br>
-                    Providing the MST to the delivery man can be done using the live location and the algorithm would provide us the shortest path with less costs(We all know petrol is costly) and less time, directly supporting the business growth!
-                   <ul>
-                    <li>KRUSKAL’s Algorithm:
-                        <h5>HOW IT IS IMPLEMENTED?</h5>
-                        <p>As the delivery man would know the location prior hand when the orders are placed by the customers,
-                             then we can use Kruskals algorithm to find the MST for the delivery man.<br>
-                             The algorithm would be used in such a way that the locations of the customers are already known and we would solve it like the INVITATION problem done in the classroom. <br>
-                             <br> <img width="400" height="300" src="invitation_prob_img.jpeg" alt="Invitation problem"> <br>
-                        <br><a href="https://github.com/bhoomika-malagar/DAA-codes/blob/568436a6120f0396426d40ed2d27a9f2168f1533/kruskal/kruskalalgorithm.cpp" class="code">Sample Code for Kruskal's</a> </p>
+   
+    <section class="case-breakdown">
+        <h2 class="breakdown-head">Detailed Breakdown Of Business Ideas</h2>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Autonomous Delivery Services</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            Autonomous delivery services use self-driving vehicles, drones, or robots to deliver goods or packages without human intervention. These services leverage technologies like artificial intelligence, machine learning and GPS navigation to operate safely and efficiently. The goal is to provide faster, cost-effective, and reliable delivery solutions, particularly for e-commerce, food delivery, and last-mile logistics.
+                        </li>
+                        <li>
+                            To achieve this, I came up with this roadmap on how the services actually work using the algorithms. The steps mentioned below are further divided into how, where and why the algorithms are applied.
+                            <img width="500" height="500" src="ADS.jpeg" alt="ADS steps"> <br>
+                        </li>
+                        <li>Firstly, looking from the very base perspective, City Zoning and Infrastructure Planning needs to be the stage 1.
+                            To define the delivery zones and routes we can use graph algorithms to represent the city's road network where the nodes represent intersections and edges represent roads. 
+                           <b> Kruskals algorithm </b> to create cost-effective routes for warehouses, hubs and major delivery points.
+                        </li>
+                        <li>Setting up warehouses and hubs is the next step where we can <b>implement sorting techniques </b> to rank potential warehouse locations by proximity to high-demand areas.
 
-                    </li>
-                   </ul>
+                        </li>
+                        <li><b>Hashing and sorting </b> would be efficient to use in real time order management to manage high priority deliveries, ensuring the most urgent orders are served first.
+
+                            To compute the shortest delivery route in real time for each vehicle and range queries to monitor real-time traffic conditions and adjust routes dynamically.
+                        </li>
+                        <li>Further, for the scheduling and delivery execution, we can use <b>quick sort</b> based on deadlines and delivery time estimates.
+                        </li>
+                        <li>Lastly, Real time tracking and monitoring reviews. We can use <b>range queries </b> to aggregate data like total delivery distance or time.
+                            String match algorithms for efficient customer search and order history analysis. <b>Applying KMP  </b> for identifying trends in customer feedbacks.
+                        </li>
+                    </ul>
+                    <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li><b>Graph Algorithms</b>:</li>
+                        <ul>- <b> Dijkstras</b>: to compute the shortest delivery route in real-time for each vehicle. It has an efficiency of <u> O(|E|log|V|) </u> and uses greedy technique.</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Dijkstra's algorithm</a> <br>
+
+                        <br><ul>- <b> Union-find</b>: to identify connected zones and ensure route accessibility.</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Union-Find</a> <br>
+
+                        <br> <ul>- <b> Kruskal's</b>:to create cost-efficient routes for warehouses, hubs, and major delivery points. It has an efficiency of <u> O(|E|log|E|) </u> and falls under greedy technique.</ul> 
+                        <br><a href="#kruskals" class="code">Sample Code for Kruskal's</a> <br>
+
+                        <br><ul>- <b> Floyds </b>: for all-pairs shortest path calculations to ensure redundancy in the delivery network. It has an efficiency of <u>n^3</u> and uses dynammic programming technique.</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Floyd's algorithm</a> <br>
+
+                        <br><li><b>Sorting Algorithms</b>:</li>
+                        <ul>- <b> Heap Sort</b>:  to rank potential warehouse locations by proximity to high-demand areas. It has an efficiency of <u>nlogn</u> and uses transform and conquer technique.</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Heap Sort</a> <br>
+
+                        <br><ul>- <b> Quick Sort</b>: Sort delivery tasks using Quick Sort based on deadlines and delivery time estimates. It has an efficiency of <u>nlogn</u> for the best case and uses divide and conquer technique.</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Quick Sort</a> <br>
+
+                        <br><li><b>Range Queries</b>: </li>
+                        <ul>- <b> Segment Trees </b>: to perform range queries on population density and demand. It has an efficiency of <u>O(logn)</u> for queries.</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Segment Trees</a> <br>
+
+                        <br><ul>- <b> Fenwick Tree </b>: to monitor real-time traffic conditions and adjust routes dynamically. It has an efficiency of <u>O(logn) </u> </ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Fenwick Tree</a> <br>
+
+                       <br> <li><b>String Search Algorithms</b>:</li>
+                        <ul>- <b> Trie</b>: for efficient customer search and order history analysis. It has an efficiency of <u>  O(L) </u> where 
+                            L is the length of the string.</ul> <br>
+                            <a href="#kruskals" class="code">Sample Code for Trie</a> <br>
+
+                        <br><ul>- <b> Knuth Morris Pratt(KMP)</b>: for identifying trends in customer feedback. It has an efficiency of <u> O(n+m) </u> string matching.</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Floyd's algorithm</a> <br>
+                        
+                    </ul>
                 </p>
             </div>
-            <div class="idea">
-                <h3>Mixed-Use Real Estate Projects</h3>
-                <p> As mentioned in the chart of our city Indraprasth, some areas were left barren to start these real-estate Projects. 
-                    Kruskal's algorithm is used to find a Minimum Spanning Tree (MST), which can help optimize the layout of roads, electrical grids, or water supply systems.
-                    - Example: Ensuring all areas are connected with minimal construction cost.
-                     Kruskals algorithm will help us to find the most efficient route for laying the pipelines for water management system or the electrical grids with the least possible cost.
-                   <ul>
-                    <li>Kruskal’s Algorithm:
-                        <h5>HOW IT IS IMPLEMENTED?</h5>
-                        <p>Kruskal's algorithm is used to find a Minimum Spanning Tree (MST), As the architect, would have already 
-                            designed the entire layout, the next task can be done through Kruskal's algorithm which is to minimize the construction costs for our project. <br>
-                        <br><a href="https://github.com/bhoomika-malagar/DAA-codes/blob/568436a6120f0396426d40ed2d27a9f2168f1533/kruskal/kruskalalgorithm.cpp" class="code">Sample Code for Kruskal’s</a> </p>
 
-                    </li>
-                   </ul>
-                </p>
-            </div>
-            <div class="idea">
-                <h3>Cultural and Entertainment Districts</h3>
-                <p> Cultural and Enteratainment sector is that part of our city where the ticket collecting system can be applied.
-                    Cultural programs can use QUICK SORT technique to sort the audience and their purchased tickets accordingly.
-                    Just like the PVR or any concert we all are been too, THE RECLINER, THE GOLD, THE SILVER and maybe many more.
-                    The people need to be seated according to the seat and hence, sorting them based on their ticket number is the most efficient way to solve this particular problem.
-                   <ul>
-                    <li>Quick Sort:
-                        <h5>HOW IT IS IMPLEMENTED?</h5>
-                        <p>Quick sort can be implemented in this case, as we have large amounts of data. Quick sort is efficient in sorting large amounts of data (ticket numbers) and has an efficiency O(1.38n log n) in the average case. <br>
-                        <br><a href="https://github.com/bhoomika-malagar/DAA-codes/blob/568436a6120f0396426d40ed2d27a9f2168f1533/sorting/quicksort.cpp" class="code">Sample Code for Quick sort</a> </p>
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Cultural and Entertainment Districts</h2>
+                <p>Cultural and Entertainment Districts align with SDG 11.4, focuses on strengthening efforts to protect and safeguard the world’s cultural and natural heritage.
+                    Cultural and Entertainment Districts in a new city can play a vital role in advancing this goal by preserving and integrating cultural heritage. <br>
 
-                    </li>
-                   </ul>
+                    <br> Cultural and Enteratainment sector is that part of our city where the <b> ticket collecting system </b>can be applied. Cultural programs can use <b> QUICK SORT technique </b>to sort the audience and their purchased tickets accordingly. Just like the PVR or any concert we all are been too, THE RECLINER, THE GOLD, THE SILVER and maybe many more. <br> <br> The people need to be seated according to the seat and hence, sorting them based on their ticket number is the most efficient way to solve this particular problem. <br> <br> But sorting technique is not the only way to handle this massive audiences and other management.So i came up with these steps were the algorithms can be applied accordingly for <b> better efficiency </b>and 
+                    <b>handling!</b> <br>
+<br>
+                    <img width="500" height="500" src="Entertainment and culture.jpeg" alt="Cultural and Entertainment Districts">
+
+
+                         <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li><b>Sorting Algorithms</b>:</li>
+                        <ul>-<b>Heap Sort</b>: to rank venues by capacity, amenities, and location convenience. It has an efficiency of <u>nlogn</u> and uses transform and conquer technique.</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Heap Sort</a> <br>
+
+                        <br><ul>-<b>Bubble Sort</b>: Use Bubble Sort or Selection Sort for small-scale adjustments to the lineup. It has an efficiency of <u>n^2</u> and uses brute force technique.</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Bubble Sort</a> <br>
+
+                        <br><ul>-<b>Quick Sort</b>: to prioritize popular performances based on audience interest. It has an efficiency of <u>nlogn</u> for the best case and uses divide and conquer technique.</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Quick Sort</a> <br>
+
+
+                        <br> <li><b>Graph Algorithms</b>:</li>
+                        <ul>-<b>Floyds</b>: Represent venues as nodes in a graph and use Floyd-Warshall Algorithm to compute shortest paths between venues, accommodations, and transport hubs. It has an efficiency of <u>n^3</u> and uses dynammic programming technique.</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Floyd's algorithm</a> <br>
+
+                        <br><li><b>Range Queries</b>:</li>
+                        <ul>-<b>Fenwick Tree</b>: Apply Fenwick Tree for cumulative metrics, such as total ticket sales or concession purchases. It has an efficiency of <u>O(logn) </u> </ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Fenwick Tree</a> <br>
+
+                        <br><ul>-<b>DFS</b>: to explore all possible entry and exit routes for safety planning. It has an efficiency of <u>O(V+E)</u> and uses decrease and conquer technique.</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for DFS</a> <br>
+
+                        <br><ul>-<b>BFS</b>: to determine the shortest paths for emergency evacuation. It has an efficiency of <u>O(V+E)</u> and uses decrease and conquer technique.</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for BFS</a> <br>
+
+                        <br><li><b>String-Search Algorithms</b>:</li>
+                        <ul>-<b>Trie</b>: Use Trie for efficient autocompletion of customer searches, such as venue names or artist queries. It has an efficiency of <u>  O(L) </u> where 
+                            L is the length of the string.</ul> <br>
+                            <a href="#kruskals" class="code">Sample Code for Trie</a> <br>
+
+                        <br><ul>-<b>KMP</b>: Knuth-Morris-Pratt (KMP) algorithms to analyze patterns in attendee feedback. It has an efficiency of <u> O(n+m) </u> string matching.</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Fenwick Tree</a> <br>
+
+                        <br><li><b>Hashing Algorithms</b></li>
+                        <ul>-Use a Hash Table to store and retrieve artist schedules and preferences.</ul> <br>
+                        <ul>-Use Hashing to store and verify ticket data securely.</ul> <br>
+                        <ul>-Use Hashing to manage and validate attendee credentials (tickets, passes).</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Hashing</a> <br>
+
+                        <br><li><b>Priority Queues</b></li>
+                        <ul>-Implement Priority Queue to give VIPs or special guests priority access.</ul> <br>
+                        <a href="#kruskals" class="code">Sample Code for Priority Queues</a> <br>
+                    </ul>
                 </p>
             </div>
         </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Shared Mobility Services</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            Shared mobility services are transportation options that let people share vehicles, bikes, or scooters instead of owning them. These services make it easier and cheaper for people to get around cities while reducing traffic, pollution, and parking problems.
+                        </li>
+                        <li>
+                            <ul>
+                                Apps like Uber or Lyft let you <b> book a car ride when you need it </b>. Electric scooters you can pick up and drop off anywhere, like Lime or Bird. In Paris, <b>the Vélib' bike-sharing service </b> lets people borrow a bike for short trips. There are docking stations all over the city. People use the app to unlock a bike, ride it, and return it to another station. It’s fast, cheap, and reduces car usage. We can implement the same in our city Indraprasth.</ul> <br>
+                            <ul>These services can be used by <b> Residents </b> to share rides for work or errands without owning a vehicle. <b>Tourists</b> could Explore the city easily without renting a car and all together we can
+                           <b> Reduce traffic jams </b>and <b>pollution </b> while improving public transport connections. To understand the business case better, I have created a flowchart, which is as follows:</ul> <br>
+                                <img width="700" height="500" src="Flow Chart.png" alt="Shared Mobility Services">
+                            
+                    </ul>
+                    <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li><b>String Search</b>:- Trie</li> <br>
+                        <a href="#kruskals" class="code">Sample Code for Trie</a> <br>
+
+                        <br><li><b>Sorting Algorithms</b>:- Heap Sort</li> <br>
+                        <a href="#kruskals" class="code">Sample Code for Heap Sort</a> <br>
+
+                        <br><li><b>Fenwick Trees</b></li> <br>
+                        <a href="#kruskals" class="code">Sample Code for Fenwick Tree</a> <br>
+
+                        <br><li><b>Segment Trees</b></li> <br>
+                        <a href="#kruskals" class="code">Sample Code for Segment Tree</a> <br>
+
+                        <br><li><b>Graph Algorithms</b>: Prims, Dijkstra's, Union-Find</li> <br>
+                        <a href="#kruskals" class="code">Sample Code for Prims</a> <br> 
+
+                       <br> <a href="#kruskals" class="code">Sample Code for Dijkstra's</a> <br>
+
+                        <br> <a href="#kruskals" class="code">Sample Code for Union-Finf</a> <br>
+
+                       <br> <li><b>Hashing/Hash Map</b></li>
+                       <br><a href="#kruskals" class="code">Sample Code for Hashing</a> <br>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">High Tech Business Parks</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            High-Tech Business Parks solutions align with SDG 11.3, enhance inclusive and sustainable urbanization and capacity for participatory, integrated and sustainable human settlement planning and management in all countries.
+                        </li>
+                        <li>
+                            <ul> 
+                            Firstly, we can implement Real-time Monitoring and Updates. Monitor utilities like electricity, water, and internet usage across the park. Applying <b>Fenwick Tree (Binary Indexed Tree)</b> for cumulative frequency calculations and efficiently update. <br>
+                            Example: Adjust real-time energy distribution based on cumulative demands. </ul> <br>
+                            <ul>
+                            Schedule events and meetings across various venues. Here we can use sorting algorithms like <b>QuickSort or MergeSort
+                            </b> to arrange events by start time, duration, or priority. 
+                            </ul> <br>
+                            <ul> We can make use of String search Algorithms like <b>Boyer-Moore or Rabin Karp</b> to perform text pattern matching in large datasets. Identify key trends or common issues quickly.
+                            For example, Search for the most frequent complaints in customer reviews. 
+                            </ul> <br>
+                            <ul>Graph Algorithms like DFS and BFS can be used to ensure optimal connectivity and we can use <b> Kruskal's</b> to minimize infrastructure costs. To understand the business case flow, I have created a flowchart, which is as follows:
+                            </ul>
+                          
+                            <img width="700" height="500" src="Flow Chart 2.png" alt="High Tech Business Park">
+                        </li>  
+                    </ul>
+                    <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li><b>String Search</b>: Trie, Rabin Karp</li> <br>
+                        <a href="#kruskals" class="code">Sample Code for Trie</a> <br>
+
+                        <br><a href="#kruskals" class="code">Sample Code for Rabin Karp</a> <br>
+
+                        <br><li><b>Sorting Algorithms</b>: Quick Sort, Heap Sort</li> <br>
+                        <a href="#kruskals" class="code">Sample Code for Quick Sort</a> <br>
+
+                        <br><a href="#kruskals" class="code">Sample Code for Heap Sort</a> <br>
+
+                        <br><li><b>Fenwick Trees</b></li> <br>
+                        <a href="#kruskals" class="code">Sample Code for Fenwick Tree</a> <br>
+
+                        <br><li><b>Graph Algorithms</b>: Prims, DFS</li> <br>
+                        <a href="#kruskals" class="code">Sample Code for Prims</a> <br>
+
+                      <br>  <a href="#kruskals" class="code">Sample Code for DFS</a> <br>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Mixed-Use Real Estate Projects</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            As mentioned in the chart of our city Indraprasth, some areas were left barren to start these real-estate Projects. <b>Kruskal's algorithm </b> is used to find a Minimum Spanning Tree (MST), which can help optimize the layout of roads, electrical grids, or water supply systems. <br> 
+                            <br> - Example: Ensuring all areas are connected with minimal construction cost. <br>Kruskals algorithm will help us to find the most efficient route for laying the pipelines for water management system or the electrical grids with the <b>least possible cost</b>.
+                        </li>  <br>
+                        <li>
+                           <b> HOW IT IS IMPLEMENTED? </b> <br>
+                            <br> Kruskal's algorithm is used to find a Minimum Spanning Tree (MST), As the architect, would have already designed the entire layout, the next task can be done through Kruskal's algorithm which is to minimize the construction costs for our project. <br> I have made a flowchart on how the algorithms can be applied in different stages. This flowchart gives us a rough idea on implementing the algorithms.
+                        </li>
+                    </ul>
+                    <img width="700" height="500" src="Flow Chart 3.png" alt="Mixed-Use Real Estate Projects">
+
+                    <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li><b> Sorting Algorithms</b>: Quick Sort</li> <br>
+                        <a href="#kruskals" class="code">Sample Code for Quick Sort</a> <br>
+
+                       <br> <li><b>Graph Algorithms</b>: Kruskal’s, Dijkstra's</li> <br>
+                        <a href="#kruskals" class="code">Sample Code for Kruskal’s</a> <br>
+
+                        <br> <a href="#kruskals" class="code">Sample Code for Dijkstra's </a> <br>
+
+                        <br><li><b>Hashing</b></li> <br>
+                        <a href="#kruskals" class="code">Sample Code for Hashing</a> <br>
+                        
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
     </section>
 </body>
 </html>
