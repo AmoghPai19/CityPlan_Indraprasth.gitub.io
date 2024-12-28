@@ -146,7 +146,7 @@
                 </li>
                 <li>
                     Deliberate on sorting and searching algorithms, the technique behind each and how they connect to the real world.
-                    <p class="ans">
+                    <p class="ans">Techniques include bubble sort, merge sort, quick sort, insertion sort, selection sort.
                         <br>	Sorting and searching algorithms are essential for easy organization and retrieval of data.
                         Bubble sort: Every element is compared and is swapped.
                         Selection sort: An improvised version of bubble sort in which the minimum element is swapped.
@@ -179,37 +179,411 @@
             </ol>
         </div>
     </section>
-    <section class="implementation">
-        <h2>Implementation</h2>
-        <div class="implementation-box">
-            <div class="idea">
-                <h3>Public food delivery service</h3>
-                <p>Let's consider that food has to be delivered from restaurant to the various customers. In such situation we can consider the the restauarant to be the source vertex and all other locations as intermidiate nodes the food has to be delivered.
-                    Therefore in order to reduce the delivery time a graph traversal algorithm can be optimzed which will yield us the shortest path from the source to all the locations in the most efficient way. Considering the the distance between the two locations as weights, Dijakstra's algorithm can be implemented
-                    in order to get the shortest path from the source to all other locations.
-                   <ul>
-                    <li>Dijkstra’s Algorithm:
-                        <p>Assuming that we already know the source and the and the customer location, Dijakstra's algorithm can help us find a way through which food can be delivered to all customers in less time <br>
-                        <br><a href="https://github.com/theramiway/codes/blob/15b08f7cd77c6994da8305bdfc845d64f858b01d/dijakstras.cpp" class="code">Sample Code for Dijkstras</a> </p>
+    
+    <section class="case-breakdown">
+        <h2 class="breakdown-head">Detailed Breakdown Of Business Ideas</h2>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Public food delivery service</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            Indraprastha, committed to achieving the Sustainable Development Goals (SDGs), 
+                            strives to create a sustainable city where everyone has access to basic necessities, including food. 
+                            Food is a critical parameter, as it directly impacts the health and well-being of its residents. 
+                            Ensuring access to nutritious and sufficient food supports overall public health, reducing malnutrition and related diseases. 
+                            The food sector also plays a significant role in the local economy, providing jobs and stimulating growth in agriculture, retail, and hospitality industries. 
+                            Moreover, food security is essential for social stability, ensuring that all citizens have access to the necessary resources to lead good lives. Here’s a detailed roadmap outlining the sequence of events from receiving food orders to their delivery: 
 
-                    </li>
-                   </ul>
+                        </li>
+                        <li>
+                            Here’s a detailed sequence of events explaining how the business can be run successfully: 
+                        </li>
+                        <li>
+                           <b>Queue:</b> The process begins with receiving orders, which are queued to manage them efficiently.
+                           Queueing can help in better management and organization. This pattern helps in proper processing of order. 
+                           Using the First-In-First-Out (FIFO) principle, orders are dispatched for delivery as they are prepared.
+                        </li>
+                        <li>
+                            After orders are prepared, they are clustered based on proximity for efficient delivery.
+                             By utilizing the <b>Union-Find</b> data structure, you can manage and optimize delivery clusters, ensuring efficient route planning and improved delivery times.
+                             The Union-Find data structure manages and merges disjoint sets efficiently in a graph. For instance, with nodes A, B, C, D, and E connected by edges, Union-Find unites these nodes into a single set, ensuring they are connected without forming cycles. 
+                             This is useful for connectivity queries and clustering tasks, such as determining if nodes are in the same connected component.
+                        </li>
+                        <li>
+                            After network and connectivity is established, clusters are created, food can be delivered efficiently by using the shortest path algorithm,the <b>Dijakstra's Algorithm</b>.
+                            consider the the restauarant to be the source vertex and all other locations as intermidiate nodes the food has to be delivered. Therefore in order to reduce the delivery time a graph traversal algorithm can be optimzed which will yield us the shortest path from the source to all the locations in the most efficient way. 
+                            Considering the the distance between the two locations as weights, Dijakstra's algorithm can be implemented
+                    in order to get the shortest path from the source to all other locations. 
+                        </li>
+                        <li>
+                            Customer data, including names, locations, delivery IDs, and order dates, is organized and categorized using a <b>Binary Search Tree (BST)</b>.
+                            This data structure facilitates fast lookup, addition, and deletion operations, allowing for efficient management of customer information.
+                        </li>
+                        <li>
+                           Every customer can review and give their opinions on various parameters. Customer reviews about specific dishes, service quality, and feedback are stored and retrieved using a <b>hash table (or hash map)</b>. 
+                            This data structure provides an efficient way to manage key-value pairs, enabling quick access to customer reviews and feedback.  
+                        </li>
+                    </ul>
+                    <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li><b>Queue</b>
+                            <p>A queue is a linear data structure where elements are arranged in a sequential order. 
+                                It follows the First In, First Out (FIFO) principle, meaning the first element added to the queue is the first one to be removed.<br>
+                                Efficiency: Insertion: O(1)<br><br>
+                                            Deletion: O(1)<br><br>
+                                            Searching:O(n)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Prims%20Algorithm" class="code">Sample Code for Queue</a>
+                            </p>
+                        </li>
+                        <li><b>Union-Find</b>
+                            <p>Union-Find is a technique for managing and merging disjoint sets efficiently using two main operations: union (means merging two sets) and find (identifying the set to which an element belongs). 
+                                It’s crucial in graph algorithms for handling connectivity and ensuring efficient management of connected components.<br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Dijkstras%20Algorithm" class="code">Sample Code for Union-Find</a>
+                            </p>
+                        </li>
+                        <li><b>Dijakstra’s Algorithm</b>
+                            <p>Dijakstra's Algorithm is a uses greedy technique to find the shortest path from one source to various nodes in the group.<br>
+                                Efficiency: <br>
+                                Quick Sort: (|E|log(|V|))<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/beb02eef718a0c2af4dfe9f9192bd34bf5331acc/Sorting%20Alogithms" class="code">Sample Code for Dijakstra's Algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Binary Search Tree(BST)</b>
+                            <p>
+                                A Binary search tree helps in easy and faster insertion, deletion and retrieval of data. <br>
+                                Efficiency: O(logn)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Lookup-Table" class="code">Sample Code for Binary search tree</a>
+                            </p>
+                        </li>
+                        <li><b>Hash Table</b>
+                            <p>A hash table is a data structure that stores key-value pairs for efficient retrieval. <br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Fenwick%20Tree" class="code">Sample Code for hashing</a>
+                            </p>
+                        </li>
+                    </ul>
                 </p>
             </div>
-            <div class="idea">
-                <h3>Cotton goods production Industry</h3>
-                <p>While setting up a production industry, the foremost important aspect is the raw material, in order to sort the correct materials required for producing cotton goods
-                    on a huge amount of available resource we can use quick sort algorithm to sort the raw materials efficiently.
-                   <ul>
-                    <li>Quick sort:
-                        <p>This is how we can sort the materials using the below algorithm <br>
-                        <br><a href="https://github.com/theramiway/codes/blob/15b08f7cd77c6994da8305bdfc845d64f858b01d/quicksort.cpp" class="code">Sample Code for quicksort</a> </p>
 
-                    </li>
-                   </ul>
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Cotton goods production industry</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            Cotton being one of the most grown crop on the land of Indraprastha, can be further processed and converted into end products for higher revenue and business. 
+                            A cotton goods production industry can significantly benefit a city both environmentally and economically while standing out globally. 
+                            Environmentally, adopting sustainable practices such as more use of natural resources and reduced chemical use can mitigate the negative impacts of cotton farming, promoting a greener environment. 
+                            Economically, the industry creates numerous jobs, boosts local economies, and supports related sectors like textiles and fashion, fostering industrial growth and technological advancements.
+                        </li>
+                        <li>
+                            Start by sorting the raw materials using the <b>Quick Sort</b> algorithm. 
+                            This ensures efficient organization, facilitating smoother subsequent processing.
+
+                        </li>
+                        <li>Once the sorting process has been completed, Transport the sorted raw materials from the source to the destination using <b>Dijkstra’s algorithm</b>. 
+                            This approach finds the shortest path, saving both time and money in transportation.
+                        </li>
+                        <li>Raw material before converting into an end product has to go under several stages.Therefore a stack data structure is useful to manage the stages of raw material processing. 
+                            Each process is pushed onto the stack sequentially and can be rolled back in case of errors, minimizing mistakes and increasing efficiency.
+                        </li>
+                        <li>Sometimes there can be orders that are to be delivered over urgent basis. The urgency of orders is prioritized using a <b>priority queue</b>. 
+                            This ensures that high-priority deliveries are made first. In a priority queue, each element has an assigned priority, and elements with higher priority are processed before those with lower priority.
+                        </li>
+                        <li> Cost analysis and management of expenditurescan be achieved using range queries that is <b>BIT (Binary indexed tree) or Fenwick tree</b>. 
+                            These data structures enable efficient querying and updating of financial data, providing quick insights into costs and expenditures.
+                        </li>
+                    </ul>
+                    <h3>Algorithms/Data structures that are applied:</h3>
+                    <ul>
+                        <li><b>Quick sort</b>
+                            <p>Efficiently sorts and manages large datasets.
+                                Efficiency: Best case: O(nlogn)<br><br>
+                                            Average case:O(1.38nlogn)<br><br>
+                                            Worst case: O(n^2)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/blob/d85d72bbe8b0fc7c430c855b9b817b860b716ead/Basic%20Operations/Sum%20of%20elements%20of%20Array.cpp" class="code">Sample Code for Sorting</a>
+                            </p>
+                        </li>
+                        <li><b>Dijastra's Algorithm</b>
+                            <p>Helps in finding shortest distance from one source to other destinations.<br>
+                                Efficiency: 
+                                Dijastra's Algorithm: O(|E|log|V|)<br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/beb02eef718a0c2af4dfe9f9192bd34bf5331acc/Sorting%20Alogithms" class="code">Sample Code for Dijakstra's Algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Stack</b>
+                            <p>A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. 
+                                This means that the last element added to the stack is the first one to be removed.<br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Floyds%20Algorithm" class="code">Sample Code for stack</a>
+                            </p>
+                        </li>
+                        <li><b>Priority queue</b>
+                            <p>A priority queue is a data structure where each element is assigned a priority, and elements are removed based on their priority (highest priority first). 
+                                It efficiently supports operations like finding and removing the highest-priority element.
+                                <br>
+                                Efficiency:
+                                Priority Queue:O(logn)<br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/590680d9c376432fa276ad23a0e4fb9afe55d950/Array%20Of%20Structures" class="code">Sample Code for Priority queue</a>
+                            </p>
+                        </li>
+                        <li><b>BIT/Fenwick tree</b>
+                            <p>A Fenwick Tree, also known as a Binary Indexed Tree (BIT), is a data structure that efficiently supports prefix sum queries and updates in logarithmic time.
+                                 It's commonly used for scenarios like cumulative frequency tables and calculating range sums.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/33727621bd6560be47e0cb784cdc14957225b16d/Queue" class="code">Sample Code for Fenwick Tree</a>
+                            </p>
+                        </li>
+                    
+                        
+                    </ul>
                 </p>
             </div>
-            
+
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Organic Manure Production</h2>
+                <p>The organic manure production industry can significantly contribute to the development of Indraprastha in several ways. 
+                    Environmentally, it reduces waste by converting organic waste into valuable manure, enriching soil health, and minimizing pollution. Economically, it creates jobs, boosts local agriculture by enhancing crop yields, and supports related industries, driving overall economic growth. 
+                    Socially, it fosters community engagement in sustainable practices, promotes healthier living through access to organic produce, and provides educational opportunities on environmental conservation.<br><br>
+                
+                    Suppose a production industry  aimed to revolutionize waste management by producing high-quality organic manure. 
+                    Thus they started by sourcing raw materials from various farms and markets. To minimize transportation costs and ensure efficient collection, they can use <b>Kruskal’s algorithm</b>.
+                     By representing each farm and market as nodes and the roads connecting them as edges with costs, they found the minimum spanning tree. This way, they could determine the most cost-effective routes to collect organic waste from different locations, ensuring a steady supply of raw materials.<br><br>
+
+                     Once the raw materials arrived at the facility, it is a need to sort based on their composition. Therefore again <b>sorting algorithms</b> can be utilized.
+                     Therefore implementing a sorting algorithm to categorize waste into organic and inorganic materials efficiently is useful. This ensured that only high-quality organic waste was used for composting, leading to better manure quality.<br><br>
+
+                     While mainitaing such a production industry a vast inventory of different organic ingredients used in their manure production has to be managed. 
+                     To quickly retrieve ingredient names, <b>trie</b> data structure is handy. Each ingredient name was stored as a path in the trie, allowing for fast and efficient searches.<br><br>
+
+                     During the production process, regular quality control checks has to be performed in order to maintain the required composition which is to be achieved.
+                     By using string matching algorithms, we can analyze inspection logs to detect patterns and recurring issues. This can allow one to identify defects in production batches by matching specific keywords or phrases, ensuring consistent product quality. For such <b>Rabin Karp algorithm</b> can be used.<br><br>
+
+                     After preparing and packing the organic manure, it is needed to dispatch it to various stores and wholesale buyers. Therefore we can use the <b>Floyd algorithm</b> to find the shortest paths from their factory to all delivery locations. 
+                     This optimizes delivery routes, reducing transportation costs and ensuring timely deliveries.<br><br>
+                    <ul>
+                        <li><b>Kruskal Algorithm</b>
+                            <p>Kruskal's algorithm is a Minimum Spanning Tree (MST) technique that selects the shortest edges first, adding them to the MST if they don't form a cycle. 
+                                It efficiently finds the MST by sorting all edges and then applying the Union-Find structure to manage connected components.<br>
+                                Efficiency:<br>
+                                Kruskal Algorithm :(|E|log(|V|))<br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/beb02eef718a0c2af4dfe9f9192bd34bf5331acc/Sorting%20Alogithms" class="code">Sample Code for Kruskal Algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Sorting Algorithm</b>
+                            <p>To sort and manage large datasets<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/590680d9c376432fa276ad23a0e4fb9afe55d950/Array%20Of%20Structures" class="code">Sample Code for Sorting Algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Trie</b>
+                            <p>
+                                A Trie, is a data structure used to store a dynamic set of strings where keys are usually strings.
+                                 It supports efficient retrieval, insertion, and search operations, making it ideal for applications like dictionary use and spell checking.<br>
+                                 Efficiency: Insertion: O(L), where L is the length of the word.<br><br>
+                                             Search: O(L), where L is the length of the word.<br><br>
+                                             Deletion: O(L), where L is the length of the word.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/33727621bd6560be47e0cb784cdc14957225b16d/Priority%20Queue" class="code">Sample Code for Trie</a>
+                            </p>
+                        </li>
+                        <li><b>Rabin Karp Algorithm</b>
+                            <p>The Rabin-Karp algorithm is a string-searching technique that uses hashing to find patterns within a text. 
+                                By comparing hash values of the pattern and substrings of the text, it efficiently detects matches, especially useful for multiple pattern searches.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/33727621bd6560be47e0cb784cdc14957225b16d/Hashing" class="code">Sample Code for Rabin karp Algorithm</a>
+                            </p>
+                        </li>
+                        <li><b>Floyd Algorithm</b>
+                            <p>Floyd's algorithm,is used to find the shortest paths between all pairs of nodes in a weighted graph<br><br>
+                                Efficiency:<br>
+                                Floyd's Algorithm: O(n^3)
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/33727621bd6560be47e0cb784cdc14957225b16d/Hashing" class="code">Sample Code for Floyd's algorithm</a>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Climate resilience solutions for urban development</h2>
+                <p class="explain">
+                    <ul>
+                        <li>
+                            Climate resilience solutions are critically important for Indraprastha as they help safeguard the city against the impacts of climate change and calamities. 
+                            These solutions ensure that we can efficiently manage and respond to extreme weather conditions and catastrophes, protecting our homes, infrastructure, and livelihoods. 
+                            They enable timely interventions and resource allocation, enhancing the city's ability to mitigate and adapt to climate-related risks. 
+                            By implementing these strategies, Indraprastha can ensure the safety and well-being of its residents, promote sustainable development, and foster a resilient urban environment that can thrive even in the face of climate challenges. Therefore, we work to build a future where our city not only withstands but stands strong amidst changing climate conditions and various natural disaster.<br>
+                        </li>
+                        <li>
+                            In urban climate resilience, <b>heaps</b> can be used to store and process climate data efficiently.
+                             For instance, a min-heap can keep track of the lowest temperature recorded throughout the day, enabling quick responses to sudden drops in temperature. 
+                             Conversely, a max-heap can monitor the highest temperatures, crucial for issuing heatwave alerts. By maintaining these heaps, urban managers can promptly react to extreme weather conditions, ensuring timely interventions.
+                        </li>
+                        <li>
+                            Storing all incoming climate data in a <b>BST</b> allows for efficient insertion, retrieval, and management of various data points like temperature, humidity, and wind speed. 
+                            This structured approach facilitates quick access to specific climate readings, aiding in detailed analysis and decision-making processes. 
+                            The BST structure supports efficient querying of historical climate data, enabling long-term planning and climate resilience strategies.
+                        </li>
+                        <li>
+                            Using <b>Fenwick Trees or Segment Trees</b> to handle frequent updates and range queries on weather data allows for real-time updates and analysis of changing conditions.
+                             These data structures enable the computation of aggregate statistics like average rainfall or temperature over a specified period, supporting proactive and informed decision-making for urban management. 
+                        </li>
+                        <li>
+                            Managing emergency responses is critical during severe weather events.
+                            A <b>priority queue</b> can prioritize tasks based on urgency, ensuring that high-priority tasks, such as clearing debris or rescuing individuals, are addressed first. 
+                            This data structure ensures that emergency services respond efficiently to the most critical needs, improving overall resilience and resource allocation during crises.
+                        </li>
+                        <li>Quick access to historical climate records is essential for understanding past weather patterns and predicting future trends.
+                             Implementing <b>binary search</b> within a sorted database of climate data allows urban planners to rapidly locate specific data points, facilitating the analysis of historical events and aiding in the development of robust climate resilience strategies
+
+                        </li>
+                        <li>Detecting recurring patterns in weather data is crucial for long-term climate planning. 
+                            String matching algorithms like <b>Rabin Karp</b> can be applied to historical data to identify patterns such as drought periods or heatwaves.
+                             Recognizing these patterns helps in predicting future events and preparing appropriate responses, enhancing the city’s resilience to climate variability. </li>
+                        <li>Efficient retrieval of pre-planned climate resilience solutions is vital during emergencies is an integral part. 
+                            Storing these solutions in a <b>hash table</b>, with keys representing specific conditions (For instance Indraprastha having extreme weather condition like earthquake, heatwave), allows for quick access to relevant response plans.
+                             This ensures that urban managers can implement effective measures swiftly, minimizing the impact of adverse weather conditions.</li>
+                             <li>Clustering disaster-prone areas is essential for targeted management and early aid distribution. 
+                                The <b>Union-Find</b> data structure helps identify and manage regions based on their vulnerability to disasters, such as floods or earthquakes. By efficiently grouping these areas, resources can be allocated more effectively, ensuring timely and coordinated responses during disasters.</li>
+                    </ul>
+                    <h3>Algorithms/Data-structures Used:</h3>
+                    <ul>
+                        <li><b>Heap</b>
+                            <p>A heap is a tree-based data structure with the heap property, where each parent node is greater (max-heap) or smaller (min-heap) than its children.
+                                 Heaps are used in priority queues and efficient sorting algorithms like heapsort.<br>
+                                Efficiency:
+                                O(logn)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Binary%20Search" class="code">Sample Code for Heap</a>
+                            </p>
+                        </li>
+                        <li><b>Binary search tree</b>
+                            <p>Store, retrieve and delete values efficiently<br>
+                                Efficiency: O(logn)
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/String%20Search" class="code">Sample Code for Binary search tree</a>
+                            </p>
+                        </li>
+                        <li><b>Fenwick tree or segment tree</b>
+                            <p>A Fenwick Tree (Binary Indexed Tree) supports efficient prefix sum queries and updates in logarithmic time, ideal for cumulative frequency tables. 
+                                A Segment Tree handles range queries and updates, efficiently answering various aggregate queries over a range of elements.<br>
+                                Efficiency:
+                                Fenwick tree: Updation: O(log n)<br><br>
+                                              Query: O(log n)<br><br>
+                                Segment Tree:Insertion: O(log n)<br><br>
+                                             Update: O(log n)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/beb02eef718a0c2af4dfe9f9192bd34bf5331acc/Sorting%20Alogithms" class="code">Sample Code for Fenwick tree</a><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/beb02eef718a0c2af4dfe9f9192bd34bf5331acc/Sorting%20Alogithms" class="code">Sample Code for segment tree</a>
+                            </p>
+                        </li>
+                        <li><b>Priority Queue</b>
+                            <p>A priority queue is a data structure where each element is assigned a priority, and elements are removed based on their priority (highest priority first). 
+                                It efficiently supports operations like finding and removing the highest-priority element.
+                                <br>
+                                Efficiency:
+                                Priority Queue:O(logn)<br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/590680d9c376432fa276ad23a0e4fb9afe55d950/Array%20Of%20Structures" class="code">Sample Code for Priority queue</a>
+                            </p>
+                        </li>
+                        <li><b>Binary Search</b>
+                            <p>Binary Search is an efficient algorithm for finding an item from a sorted list or array.<br>
+                                Efficiency: Best case: O(1)<br><br>
+                                            Avg case: O(log n)<br><br>
+                                            Worst case: O(logn)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Trie" class="code">Sample Code for Binary search</a>
+                            </p>
+                        </li>
+                        <li><b>Rabin Karp Algorithm</b>
+                            <p>The Rabin-Karp algorithm is a string-searching technique that uses hashing to find patterns within a text. 
+                                By comparing hash values of the pattern and substrings of the text, it efficiently detects matches, especially useful for multiple pattern searches.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/33727621bd6560be47e0cb784cdc14957225b16d/Hashing" class="code">Sample Code for Rabin karp Algorithm</a>
+                            </p>
+                            </p>
+                        </li>
+                        <li><b>Hash Tables</b>
+                            <p>A hash table is a data structure that stores key-value pairs for efficient retrieval. <br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/15ad034f96929e76cc3b17727a5a62f53c38fed9/Fenwick%20Tree" class="code">Sample Code for hashing</a>
+                            </p>
+                        </li>
+                        </li>
+                        <li><b>Union-Find</b>
+                            <p>The Union-Find structure is particularly useful in applications where you need to efficiently manage and query dynamic connectivity, such as in graph algorithms 
+                                <br>
+                                Efficiency: O(n)<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Unioin-Find" class="code">Sample Code for Union-Find</a>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="beakdown-box">
+            <div class="cases">
+                <h2 class="case-head">Smart Water Management</h2>
+                <p class="explain">
+                    <ul>
+                        <li>Smart water management is essential for Indraprastha to ensure sustainable development and resource efficiency. 
+                            As the city's population grows, the demand for water increases, making it crucial to manage water resources intelligently at the same time skillfully. 
+                            Implementing advanced technologies and data-driven strategies helps in optimizing water usage, reducing wastage, and ensuring that supply meets demand. 
+                            Smart water management also enhances the ability to detect and address issues like leaks and complaints swiftly, improving overall system reliability and customer satisfaction. 
+                            Moreover, efficient water management supports environmental sustainability by promoting water conservation, reducing the stress on natural water sources, and mitigating the impacts of climate change. By adopting smart water management practices, Indraprastha can ensure a resilient and sustainable water supply for its residents, fostering long-term growth and well-being.</li>
+                        <li>
+                            The first step is to identify the population density of each area.
+                            An <b>array</b>stores daily water consumption data for each household. 
+                            It provides a straightforward way to monitor and track water usage patterns across the city, allowing for efficient analysis and management.
+
+                        </li>
+                        <li>
+                            Now we need information of each of every household, this can be done using <b>structures</b>.
+                            Structures hold detailed information about each residence, such as the number of occupants and water usage history. This helps in organizing and accessing  data efficiently.
+                        </li>
+                        <li>
+                            A <b>segment tree</b>is used to calculate the total water consumption over various periods or regions.
+                             It allows for quick and accurate querying and updating of data, aiding in real-time monitoring and resource management.
+                        </li>
+                        <li>
+                            We can now use <b>Prim's algorithm</b> in finding the most efficient routes for water supply distribution. 
+                            It ensures minimal transportation costs and water loss by determining the shortest and most cost-effective connective routes for delivery, ensuring that all areas receive adequate water supply efficiently.
+                        </li>
+                        <li>At the end, a lookup table stores pre-computed solutions to recurring issues such as leaks, complaints, and their respective solutions. This enables quick responses to common problems, enhancing the efficiency of the water management system .</li>
+                    </ul>
+                    <ul>
+                        <li><b>Array</b>
+                            <p>An array is a linear data structure that stores elements in contiguous memory locations, allowing fast access<br>
+                                Efficiency:
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/beb02eef718a0c2af4dfe9f9192bd34bf5331acc/Sorting%20Alogithms" class="code">Sample Code for Array</a>
+                            </p>
+                        </li>
+                        <li><b>Structure</b>
+                            <p>It is used to represent complex data models, making data management more organized.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Queue" class="code">Sample Code for structure</a>
+                            </p>
+                        </li>
+                        <li><b>Segment tree</b>
+                            <p>A Segment Tree handles range queries and updates, efficiently answering various aggregate queries over a range of elements.<br>
+                                Efficiency:
+                                Segment Tree:Insertion: O(log n)<br><br>
+                                             Update: O(log n)<br><br><br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Kruskal's%20Algorithm" class="code">Sample Code for segment trees</a>
+                            </p>
+                        </li>
+                        <li><b>Prims's Algorithm</b>
+                            <p>Prim's algorithm finds the  way to connect all the points in a graph. 
+                                It starts with one point and keeps adding the smallest possible connection to a new point until everything is connected.<br><br>
+                                <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Hashing" class="code">Sample Code for prim algorithm</a>
+                            </p>
+                            <li><b>Lookup Table</b>
+                                <p>A lookup table is like a quick reference guide. It stores precomputed answers or data so that you can find the information you need instantly<br><br>
+                                    <a href="https://github.com/AmoghPai19/DSA_CodeLibrary/tree/6bb8c79b6e3d3196b19112dabe9c370c4491ec8c/Hashing" class="code">Sample Code for Lookup table</a>
+                                </p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
     </section>
 </body>
 </html>
