@@ -4,3 +4,6 @@ Akshara_Kulkarni 450 003
 Vikram_Mehta 550 004
 Priya_Iyer 620 005
 Bhoomika_Malagar 400 007
+Amogh_Pai 700 0019
+Saanvi_Shetty 500 008
+Ramya_Rao 560 0014
