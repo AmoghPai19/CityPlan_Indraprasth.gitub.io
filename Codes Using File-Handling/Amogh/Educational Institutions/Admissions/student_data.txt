@@ -1,0 +1,270 @@
+Aarav Sharma
+20
+85.5
+Ishita Patel
+21
+90.0
+Rohan Gupta
+22
+78.0
+Priya Kumar
+20
+88.0
+Ananya Yadav
+19
+92.5
+Vikram Singh
+23
+76.0
+Saanvi Desai
+21
+80.5
+Ayaan Joshi
+20
+85.0
+Kiara Mehta
+22
+89.0
+Aditya Verma
+21
+95.0
+Tanvi Nair
+19
+91.0
+Aman Shah
+20
+83.0
+Neha Rao
+22
+87.5
+Krishna Reddy
+21
+82.0
+Simran Kapoor
+23
+77.5
+Kabir Bansal
+20
+90.5
+Madhuri Jain
+21
+79.0
+Siddharth Roy
+22
+88.5
+Navya Gupta
+20
+84.0
+Yash Mehta
+23
+78.5
+Alok Sharma
+21
+93.0
+Pooja Bhatt
+19
+85.0
+Aarav Deshmukh
+21
+91.5
+Aarti Verma
+23
+78.0
+Divya Bansal
+20
+83.5
+Anand Jain
+19
+89.5
+Maya Patil
+21
+87.0
+Varun Yadav
+22
+90.0
+Chandni Verma
+20
+88.0
+Mudit Shah
+23
+92.0
+Nikita Patil
+19
+91.0
+Rishi Gupta
+21
+84.5
+Amit Kaur
+22
+77.0
+Yuvraj Singh
+20
+79.0
+Radhika Kapoor
+21
+90.0
+Rajesh Nair
+23
+75.5
+Tanya Bhardwaj
+22
+86.0
+Manish Gupta
+19
+80.5
+Meenal Yadav
+21
+88.5
+Akshay Joshi
+20
+85.5
+Shruti Mehta
+22
+90.5
+Ananya Kaur
+21
+94.0
+Arvind Patel
+23
+82.5
+Harsh Jain
+20
+86.5
+Ravi Desai
+22
+79.5
+Sandeep Yadav
+21
+93.5
+Shubhi Mehta
+20
+90.5
+Aman Patil
+23
+87.0
+Preeti Rao
+19
+80.0
+Anand Yadav
+22
+95.0
+Nilesh Joshi
+21
+83.0
+Madhuri Rao
+20
+89.5
+Neel Sharma
+22
+88.0
+Divya Gupta
+21
+81.0
+Ravi Verma
+23
+90.0
+Sanjay Nair
+20
+86.0
+Sakshi Deshmukh
+22
+92.5
+Shivani Joshi
+19
+85.0
+Kunal Bansal
+21
+93.0
+Komal Mehta
+20
+87.5
+Aniket Yadav
+23
+80.0
+Madhavi Rao
+21
+88.0
+Sandeep Kapoor
+20
+82.0
+Abhinav Patel
+22
+79.0
+Deepika Bansal
+23
+84.0
+Neelam Gupta
+21
+85.5
+Tarun Deshmukh
+19
+91.5
+Pankaj Yadav
+21
+78.5
+Krutika Patil
+23
+93.5
+Siddhi Desai
+20
+82.5
+Harish Kumar
+22
+91.0
+Vaibhav Mehta
+21
+85.0
+Komal Bansal
+22
+88.0
+Shubham Verma
+23
+90.5
+Rita Sharma
+19
+91.5
+Vikas Joshi
+20
+84.0
+Amit Nair
+21
+78.5
+Mona Verma
+23
+87.5
+Suman Gupta
+21
+89.5
+Prashant Patel
+22
+83.0
+Varsha Deshmukh
+20
+85.0
+Niharika Bansal
+22
+78.0
+Himani Yadav
+21
+90.0
+Manpreet Kaur
+23
+88.0
+Tushar Gupta
+20
+87.5
+Meenal Joshi
+21
+86.0
+Kartik Patel
+22
+81.5
+Nikki Reddy
+20
+92.0
+Siddhi Verma
+23
+80.0
+Aruna Nair
+21
+85.5
