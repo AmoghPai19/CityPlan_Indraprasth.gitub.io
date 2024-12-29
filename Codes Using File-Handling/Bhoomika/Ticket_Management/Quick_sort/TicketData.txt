@@ -1,23 +1,4 @@
-Aarav Sharma 500 001
-Anaya Patel 600 002
-Akshara Kulkarni 450 003
-Vikram Mehta 550 004
-Priya Iyer 620 005
-Nikhil Deshmukh 700 006
-Tara Sharma 450 007
-Ravi Kumar 550 008
-Ankita Singh 480 009
-Varun Bansal 600 010
-Sanya Gupta 580 011
-Neha Reddy 650 012
-Siddharth Chawla 620 013
-Manisha Patil 570 014
-Rohit Kapoor 700 015
-Pooja Verma 520 016
-Karan Joshi 560 017
-Aditi Agarwal 580 018
-Maya Rao 490 019
-Sameer Shah 530 020
-Riya Dubey 600 021
-Arjun Rao 550 022
-Tanvi Joshi 460 023
+John Doe,1234,2024-01-01
+Jane Smith,5678,2024-01-02
+Alice Johnson,3456,2024-01-03
+Bhoomika Malagar,561,2024-01-03
