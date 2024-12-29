@@ -67,7 +67,7 @@ void food_data::load_from_file()
         getline(ss, temp, ',');
         entry.dish = temp.substr(temp.find(":") + 2); 
 
-        // Parse location
+       
         getline(ss, temp, ',');
         entry.location = temp.substr(temp.find(":") + 2); 
 
