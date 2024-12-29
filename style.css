@@ -444,13 +444,6 @@ th {
     font-weight: 500;
     padding: 3px;
 }
-
-.image-container img{
-    display: inline-block;
-      margin-right: 10px; 
-    align: centre;
-}
-
 .FHcase{
     padding: 2rem;
     text-align: center;
@@ -471,6 +464,36 @@ th {
     color: #000000;
     font-weight: bold;
     padding: 3px;
+}
+
+.LO-box{
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    color: black;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/*Collabz*/
+.collab-box{
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    color: black;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.collab-head{
+    padding: 2rem;
+    text-align: center;
 }
 
 /* Keyframe Animations */
