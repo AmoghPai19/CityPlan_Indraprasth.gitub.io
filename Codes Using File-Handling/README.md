@@ -1,1 +1,1 @@
-
+This folder consists of codes which are done using File Handling. Considering the complexity and the knowledge we have about File Handling, It was not possible for us to not use the chatgpt and other AI tools. We have kept this folder seperate, as the other basic codes were implemented by us. Basic sorting using file handling was do able as we leanrt it in the Algorithms Lab and already implemented in the Recommended Engine.
