@@ -22,8 +22,11 @@ public:
 segtree::segtree(int n, int arr[])
 {
     size = n;
-    memset(tree, 0, sizeof(tree));
-    memset(lazy, 0, sizeof(lazy));
+    for (int i = 0; i < MAX * 4; i++)
+    {
+        tree[i] = 0;
+        lazy[i] = 0;
+    }
     build(0, 0, n - 1, arr);
 }
 
