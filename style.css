@@ -495,7 +495,11 @@ th {
     padding: 2rem;
     text-align: center;
 }
-
+.collab-box p {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+}
 /* Keyframe Animations */
 @keyframes fadeIn {
     from {
