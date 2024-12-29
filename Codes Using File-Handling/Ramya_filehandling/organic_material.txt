@@ -1,6 +1,0 @@
-5
-10 Organic Manure
-20 Compost
-15 Cow Dung
-30 Chicken Waste
-25 Green Waste
