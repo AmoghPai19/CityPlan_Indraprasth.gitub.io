@@ -7,8 +7,8 @@ using namespace std;
 class organic_data
 {
 private:
-    int quantity[150];        
-    char material_name[150][30]; 
+    int quantity[30000]; 
+    char material_name[30000][30]; 
     int global_count;
 
 public:
@@ -18,21 +18,17 @@ public:
     void load_from_file();
     void display_data();
 
- 
     void quick_sort(int low, int high);
     int partition(int low, int high);
     void swap(int i, int j);
 
-    
     int get_global_count() const;
 };
-
 
 organic_data::organic_data()
 {
     global_count = 0;
 }
-
 
 void organic_data::welcome()
 {
@@ -44,10 +40,9 @@ void organic_data::welcome()
     cout << "\n\n";
 }
 
-
 void organic_data::load_from_file()
 {
-    ifstream file("organic_materials.txt");  
+    ifstream file("ogmaterial.txt");
 
     if (!file)
     {
@@ -56,17 +51,17 @@ void organic_data::load_from_file()
     }
 
     int count;
-    file >> count;  
-    file.ignore();  
-    cout << "Expected count: " << count << endl;  
+    file >> count;
+    file.ignore();
+    cout << "Expected count: " << count << endl;
 
     while (file >> quantity[global_count])
     {
-        file.getline(material_name[global_count], 30);  
-        cout << "Loaded: " << quantity[global_count] << " " << material_name[global_count] << endl; 
+        file.getline(material_name[global_count], 30);
+        cout << "Loaded: " << quantity[global_count] << " " << material_name[global_count] << endl;
         global_count++;
 
-        if (global_count >= count)  
+        if (global_count >= count || global_count >= 30000)  // Limit to 30,000 entries
         {
             break;
         }
@@ -74,7 +69,6 @@ void organic_data::load_from_file()
 
     file.close();
 }
-
 
 void organic_data::display_data()
 {
@@ -89,48 +83,41 @@ void organic_data::quick_sort(int low, int high)
 {
     if (low < high)
     {
-        int pi = partition(low, high);  
+        int pi = partition(low, high);
 
-      
         quick_sort(low, pi - 1);
         quick_sort(pi + 1, high);
     }
 }
 
-
 int organic_data::partition(int low, int high)
 {
-    int pivot = quantity[high];  
-    int i = (low - 1);  
-
+    int pivot = quantity[high];
+    int i = (low - 1);
 
     for (int j = low; j < high; j++)
     {
-        if (quantity[j] < pivot)  
+        if (quantity[j] < pivot)
         {
             i++;
-            swap(i, j);  
+            swap(i, j);
         }
     }
-    swap(i + 1, high);  
+    swap(i + 1, high);
     return (i + 1);
 }
 
-
 void organic_data::swap(int i, int j)
 {
- 
     int temp_qty = quantity[i];
     quantity[i] = quantity[j];
     quantity[j] = temp_qty;
 
-   
     char temp_name[30];
     strcpy(temp_name, material_name[i]);
     strcpy(material_name[i], material_name[j]);
     strcpy(material_name[j], temp_name);
 }
-
 
 int organic_data::get_global_count() const
 {
@@ -140,13 +127,13 @@ int organic_data::get_global_count() const
 int main()
 {
     organic_data engine;
-    engine.welcome();  
+    engine.welcome();
 
-    engine.load_from_file(); 
+    engine.load_from_file();
 
     if (engine.get_global_count() > 0) {
         engine.quick_sort(0, engine.get_global_count() - 1);
-        engine.display_data();    
+        engine.display_data();
     } else {
         cout << "No data to display." << endl;
     }
