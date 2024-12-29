@@ -448,6 +448,7 @@ th {
 .image-container img{
     display: inline-block;
       margin-right: 10px; 
+    align: centre;
 }
 
 .FHcase{
