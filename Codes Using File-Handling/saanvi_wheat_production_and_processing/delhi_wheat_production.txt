@@ -1,0 +1,7 @@
+Area1 100
+Area2 200
+Area1 150
+Area3 300
+Area2 100
+Area3 200
+Area1 50
