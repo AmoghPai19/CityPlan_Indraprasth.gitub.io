@@ -444,6 +444,12 @@ th {
     font-weight: 500;
     padding: 3px;
 }
+
+.image-container img{
+    display: inline-block;
+      margin-right: 10px; 
+}
+
 .FHcase{
     padding: 2rem;
     text-align: center;
