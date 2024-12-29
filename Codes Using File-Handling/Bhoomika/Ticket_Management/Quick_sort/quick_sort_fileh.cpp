@@ -4,8 +4,7 @@
 #include <cstring>
 using namespace std;
 
-class ticket_data
-{
+class ticket_data {
 private:
     char name[150][30];
     char ticket_number[150][15];
@@ -15,19 +14,19 @@ private:
     // Function to partition the array for QuickSort based on ticket_number
     int Partition(int l, int r) {
         string pivot = ticket_number[l];
-        int i = l;
-        int j = r + 1;
+        int i = l + 1; // Start from the next element
+        int j = r;
 
         while (true) {
-            // Find element greater than or equal to pivot
-            do {
+            // Move i to the right while elements are less than or equal to the pivot
+            while (i <= r && string(ticket_number[i]) <= pivot) {
                 i++;
-            } while (i <= r && string(ticket_number[i]) <= pivot);
+            }
 
-            // Find element smaller than pivot
-            do {
+            // Move j to the left while elements are greater than the pivot
+            while (j >= l && string(ticket_number[j]) > pivot) {
                 j--;
-            } while (string(ticket_number[j]) > pivot);
+            }
 
             if (i >= j)
                 break;
@@ -64,13 +63,11 @@ public:
     void sort_data();  // Sort ticket data based on ticket_number
 };
 
-ticket_data::ticket_data()
-{
+ticket_data::ticket_data() {
     global_count = 0;
 }
 
-void ticket_data::welcome()
-{
+void ticket_data::welcome() {
     for (int i = 0; i < 80; i++)
         cout << "*";
     cout << "\n\n\t\t\t\tTICKET MANAGEMENT SYSTEM\n\n\n";
@@ -79,12 +76,10 @@ void ticket_data::welcome()
     cout << "\n\n";
 }
 
-void ticket_data::load_from_file()
-{
+void ticket_data::load_from_file() {
     ifstream file("TicketData.txt");
 
-    if (!file)
-    {
+    if (!file) {
         cout << "File Not Found\n";
         return;
     }
@@ -92,12 +87,10 @@ void ticket_data::load_from_file()
     // Correctly read the file data
     while (file.getline(name[global_count], 30, ',') &&
            file.getline(ticket_number[global_count], 15, ',') &&
-           file.getline(purchase_date[global_count], 15))
-    {
+           file.getline(purchase_date[global_count], 15)) {
         if (global_count < 150)
             global_count++;
-        else
-        {
+        else {
             cout << "Maximum data limit reached.\n";
             break;
         }
@@ -106,8 +99,12 @@ void ticket_data::load_from_file()
     file.close();
 }
 
-void ticket_data::display_data()
-{
+void ticket_data::display_data() {
+    if (global_count == 0) {
+        cout << "No data to display.\n";
+        return;
+    }
+
     cout << left << setw(30) << "Name"
          << setw(20) << "Ticket Number"
          << setw(15) << "Purchase Date" << endl;
@@ -115,22 +112,23 @@ void ticket_data::display_data()
         cout << "-";
     cout << endl;
 
-    for (int i = 0; i < global_count; i++)
-    {
+    for (int i = 0; i < global_count; i++) {
         cout << left << setw(30) << name[i]
              << setw(20) << ticket_number[i]
              << setw(15) << purchase_date[i] << endl;
     }
 }
 
-void ticket_data::sort_data()
-{
-    // Call the QuickSort function to sort the ticket_number array and rearrange associated data
-    QuickSort(0, global_count - 1);
+void ticket_data::sort_data() {
+    if (global_count > 1) {
+        // Call the QuickSort function to sort the ticket_number array and rearrange associated data
+        QuickSort(0, global_count - 1);
+    } else {
+        cout << "Not enough data to sort.\n";
+    }
 }
 
-int main()
-{
+int main() {
     ticket_data engine;
     engine.welcome();
 
